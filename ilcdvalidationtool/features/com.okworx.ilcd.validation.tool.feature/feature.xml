@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.okworx.ilcd.validation.tool.feature"
+      label="Feature"
+      version="2.14.0"
+      provider-name="OKWORX">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.e4.ui.workbench"/>
+      <import plugin="org.eclipse.e4.ui.model.workbench"/>
+      <import plugin="org.eclipse.e4.core.di"/>
+      <import plugin="org.eclipse.e4.ui.di"/>
+      <import plugin="org.eclipse.e4.core.services"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.equinox.p2.core"/>
+      <import plugin="org.eclipse.equinox.p2.operations"/>
+      <import plugin="org.eclipse.equinox.p2.engine"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.osgi"/>
+      <import plugin="jakarta.annotation-api"/>
+      <import plugin="jakarta.inject.jakarta.inject-api"/>
+      <import plugin="org.eclipse.e4.core.di.annotations"/>
+      <import plugin="org.eclipse.equinox.launcher"/>
+   </requires>
+
+   <plugin
+         id="com.okworx.ilcd.validation.tool.plugin"
+         version="0.0.0"/>
+
+</feature>

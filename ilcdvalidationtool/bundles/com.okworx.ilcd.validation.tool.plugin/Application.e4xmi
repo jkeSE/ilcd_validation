@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_L0VvANsAEeS79KKCSHhlYQ" elementId="org.eclipse.e4.ide.application" bindingContexts="_L0WWGNsAEeS79KKCSHhlYQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_L0WWENsAEeS79KKCSHhlYQ" elementId="com.okworx.ilcd.validation.tool.trimmedwindow.main" label="%WindowName" iconURI="platform:/plugin/com.okworx.ilcd.validation.tool.plugin/resources/icons/ILCDValidator-256.png" x="20" y="50" width="1400" height="800">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_L0YLRNsAEeS79KKCSHhlYQ">
+      <children xsi:type="advanced:Perspective" xmi:id="_L0YLRdsAEeS79KKCSHhlYQ">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_L0YLRtsAEeS79KKCSHhlYQ">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_HRs4UONmEeSKgMhNmJFM_A" elementId="com.okworx.ilcd.validation.tool.partsashcontainer.0" containerData="57" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_MtMQoONmEeSKgMhNmJFM_A" elementId="" containerData="47">
+              <children xsi:type="basic:Part" xmi:id="_N7WF0ONmEeSKgMhNmJFM_A" elementId="com.okworx.ilcd.validation.tool.parts.fileselection" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.FileSelectionPart" label="%FileSelectionPartName"/>
+            </children>
+            <children xsi:type="basic:CompositePart" xmi:id="_uAWqAL89EemHrMGo0I-4Uw" elementId="com.okworx.ilcd.validation.tool.plugin.compositepart.0" toBeRendered="false" visible="false" containerData="30" horizontal="true"/>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_07zuUL8_EemHrMGo0I-4Uw" elementId="com.okworx.ilcd.validation.tool.plugin.partsashcontainer.0" containerData="30">
+              <children xsi:type="basic:PartStack" xmi:id="_2-dNcL89EemHrMGo0I-4Uw" elementId="com.okworx.ilcd.validation.tool.plugin.partstack.1" containerData="30">
+                <children xsi:type="basic:Part" xmi:id="_986NUL89EemHrMGo0I-4Uw" elementId="com.okworx.ilcd.validation.tool.part.profileselectionpartname" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.ProfileSelectionPart" label="%ProfileSelectionPartName"/>
+                <children xsi:type="basic:Part" xmi:id="_YdwLsEZqEequkPyzz4nJgg" elementId="com.okworx.ilcd.validation.tool.plugin.part.profileselectionoptionspartname" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.ProfileSelectionOptionsPart" label="%ProfileSelectionOptionsPartName"/>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_zASHsL89EemHrMGo0I-4Uw" elementId="com.okworx.ilcd.validation.tool.plugin.partstack.0" containerData="70">
+                <children xsi:type="basic:Part" xmi:id="_XdEm8PV-EeSB-8L9QiUgYA" elementId="com.okworx.ilcd.validation.tool.part.aspectsselectionpartname" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.AspectsSelectionPart" label="%AspectsSelectionPartName"/>
+                <children xsi:type="basic:Part" xmi:id="_XdEm8PV-EeSB-8L9QiUgYA" elementId="com.okworx.ilcd.validation.tool.part.validationoptionspartname" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.ValidationOptionsPart" label="%ValidationOptionsPartName"/>
+              </children>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_NbVwEONmEeSKgMhNmJFM_A" elementId="com.okworx.ilcd.validation.tool.partstack.1" toBeRendered="false" visible="false" containerData="30"/>
+            <children xsi:type="basic:PartStack" xmi:id="_x40wkP3REea5cN4bbFot7w" elementId="com.okworx.ilcd.validation.tool.partstack.2" containerData="23">
+              <children xsi:type="basic:Part" xmi:id="_lbE2cP3REea5cN4bbFot7w" elementId="com.okworx.ilcd.validation.tool.part.statisticspartname" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.StatisticsPart" label="%StatisticsPartName"/>
+            </children>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_L0YLR9sAEeS79KKCSHhlYQ" elementId="com.okworx.ilcd.validation.tool.partsashcontainer.1" containerData="43">
+            <children xsi:type="basic:Part" xmi:id="_OMzCMONmEeSKgMhNmJFM_A" elementId="com.okworx.ilcd.validation.tool.parts.validation" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.ValidationPart" label="%ValidationMessagesPartName"/>
+            <children xsi:type="basic:Part" xmi:id="_J-HH0EouEem8CdV9ht1Qow" elementId="com.okworx.ilcd.validation.tool.part.releasenotes" toBeRendered="false" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.ReleaseNotePart" label="%UpdateInfoPartName" closeable="true"/>
+            <children xsi:type="basic:Part" xmi:id="_9WRq0N3sEemLbOivP8es9A" elementId="com.okworx.ilcd.validation.tool.part.consoleview" toBeRendered="false" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.ConsoleViewPart" label="%ConsoleViewPartName" closeable="true"/>
+            <children xsi:type="basic:Part" xmi:id="_IV33EKV-Eeq98cwjvc_mLA" elementId="com.okworx.ilcd.validation.tool.part.profilechangelogview" toBeRendered="false" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.ProfileChangelogView" label="%ProfileChangelogPartName" closeable="true"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="basic:Part" xmi:id="_a8fwwOHREeiMr51Sxajo-A" elementId="com.okworx.ilcd.validation.tool.part.updatepartname" visible="false" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.UpdatePart" label="%UpdatePartName"/>
+    <mainMenu xmi:id="_L0XkO9sAEeS79KKCSHhlYQ" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_L0XkPNsAEeS79KKCSHhlYQ" elementId="org.eclipse.ui.file.menu" label="%FileMenuName">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_L0XkPdsAEeS79KKCSHhlYQ" elementId="com.example.e4.rcp.todo.handledmenuitem.add" label="%AddMenuItemName" iconURI="" command="_L0XkMtsAEeS79KKCSHhlYQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ziQXgBAuEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.handledmenuitem.remove" label="%RemoveMenuItemName" command="_L0XkONsAEeS79KKCSHhlYQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_BchS8BAvEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.handledmenuitem.clear" label="%ClearMenuItemName" command="_XhAd0BAvEeWKQ47DKGA29g"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_2mm0AONlEeSKgMhNmJFM_A" elementId="com.okworx.ilcd.validation.tool.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_L0YLQdsAEeS79KKCSHhlYQ" elementId="com.example.e4.rcp.todo.handledmenuitem.quit" label="%QuitMenuItemName" command="_L0WWG9sAEeS79KKCSHhlYQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_L0YLQtsAEeS79KKCSHhlYQ" elementId="org.eclipse.ui.validation.menu" label="%ValidationMenuName">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_L0YLQ9sAEeS79KKCSHhlYQ" elementId="com.example.e4.rcp.todo.handledmenuitem.start" label="%StartMenuItemName" command="_YiYr8BDXEeWKQ47DKGA29g"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_8eZDsBKtEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.handledmenuitem.stop" label="%StopMenuItemName" command="_ZC1GkBDXEeWKQ47DKGA29g"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_rww94BKvEeWKQ47DKGA29g" elementId="com.example.e4.rcp.todo.menu.help" label="%HelpMenuName">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_5HE3sBKvEeWKQ47DKGA29g" elementId="com.example.e4.rcp.todo.handledmenuitem.about" label="%AboutMenuItemName" command="_DqXQQBKwEeWKQ47DKGA29g"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6JVHYOGpEeiMr51Sxajo-A" elementId="com.okworx.ilcd.validation.tool.handledmenuitem.update" label="%UpdateMenuItemName" command="_-kfEEOGpEeiMr51Sxajo-A"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ffGVUEo0Eem8CdV9ht1Qow" elementId="com.okworx.ilcd.validation.tool.handledmenuitem.update" label="%UpdateInfoMenuItemName" command="_0oei0Eo0Eem8CdV9ht1Qow"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_NMDBAKpOEeq75cOkGS8wGA" elementId="com.okworx.ilcd.validation.tool.handledmenuitem.profileUpdates" label="%ProfileChangelogPartName" command="_ZCwJQKpOEeq75cOkGS8wGA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_7qNscN3-EemLbOivP8es9A" elementId="com.okworx.ilcd.validation.tool.handledmenuitem.consoleview" label="%ConsoleViewMenuItemName" command="_CToQcN3_EemLbOivP8es9A"/>
+      </children>
+    </mainMenu>
+  </children>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_QGL9sBWjEeWLL-HlRNPccw" elementId="com.okworx.ilcd.validation.tool.trimmedwindow.about" toBeRendered="false" label="%AboutWindowName" x="300" y="100" width="520" height="480">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_5F1LABWjEeWLL-HlRNPccw" elementId="com.okworx.ilcd.validation.tool.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_6ytjkBWjEeWLL-HlRNPccw" elementId="com.okworx.ilcd.validation.tool.perspective.0">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Bk2lwBWkEeWLL-HlRNPccw" elementId="com.okworx.ilcd.validation.tool.partsashcontainer.1">
+          <children xsi:type="basic:PartStack" xmi:id="_CE4wsBWkEeWLL-HlRNPccw" elementId="com.okworx.ilcd.validation.tool.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_Cxq-MBWkEeWLL-HlRNPccw" elementId="com.okworx.ilcd.validation.tool.part.aboutcopyrightpartname" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.AboutCopyrightPart" label="%AboutCopyrightPartName"/>
+            <children xsi:type="basic:Part" xmi:id="_DDcqsBWkEeWLL-HlRNPccw" elementId="com.okworx.ilcd.validation.tool.part.aboutlibrariespartname" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.parts.AboutLibrariesPart" label="%AboutLibrariesPartName"/>
+          </children>
+        </children>
+      </children>
+    </children>
+  </children>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_5VxRwOHQEeiMr51Sxajo-A" elementId="com.okworx.ilcd.validation.tool.trimmedwindow.update" toBeRendered="false" visible="false" label="%UpdateWindowName" x="300" y="100" width="450" height="520"/>
+  <handlers xmi:id="_L0XkM9sAEeS79KKCSHhlYQ" elementId="com.okworx.ilcd.validation.tool.handler.add" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.AddHandler" command="_L0XkMtsAEeS79KKCSHhlYQ"/>
+  <handlers xmi:id="_L0XkOdsAEeS79KKCSHhlYQ" elementId="com.okworx.ilcd.validation.tool.handler.remove" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.RemoveHandler" command="_L0XkONsAEeS79KKCSHhlYQ"/>
+  <handlers xmi:id="_iCjBkBKuEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.handler.clear" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.ClearHandler" command="_XhAd0BAvEeWKQ47DKGA29g"/>
+  <handlers xmi:id="_L0WWHNsAEeS79KKCSHhlYQ" elementId="com.okworx.ilcd.validation.tool.handler.quitCommand" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.QuitHandler" command="_L0WWG9sAEeS79KKCSHhlYQ"/>
+  <handlers xmi:id="_in4jQBKuEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.handler.start" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.StartHandler" command="_YiYr8BDXEeWKQ47DKGA29g"/>
+  <handlers xmi:id="_jDFRgBKuEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.handler.stop" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.StopHandler" command="_ZC1GkBDXEeWKQ47DKGA29g"/>
+  <handlers xmi:id="_IY4N0BKwEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.handler.update" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.AboutHandler" command="_DqXQQBKwEeWKQ47DKGA29g"/>
+  <handlers xmi:id="_DZ3eoOGqEeiMr51Sxajo-A" elementId="com.okworx.ilcd.validation.tool.handler.update" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.UpdateHandler" command="_-kfEEOGpEeiMr51Sxajo-A"/>
+  <handlers xmi:id="_9U-Y4Eo0Eem8CdV9ht1Qow" elementId="com.okworx.ilcd.validation.tool.handler.releasenotes" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.ReleaseNotesHandler" command="_0oei0Eo0Eem8CdV9ht1Qow"/>
+  <handlers xmi:id="_1SO2sN3-EemLbOivP8es9A" elementId="com.okworx.ilcd.validation.tool.handler.consoleview" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.ConsoleViewHandler" command="_CToQcN3_EemLbOivP8es9A"/>
+  <handlers xmi:id="_IefQQKpPEeq75cOkGS8wGA" elementId="com.okworx.ilcd.validation.tool.handler.profileUpdates" contributionURI="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.handlers.ProfileUpdatesHandler" command="_ZCwJQKpOEeq75cOkGS8wGA"/>
+  <bindingTables xmi:id="_L0XkMNsAEeS79KKCSHhlYQ" bindingContext="_L0WWGNsAEeS79KKCSHhlYQ"/>
+  <rootContext xmi:id="_L0WWGNsAEeS79KKCSHhlYQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_L0WWGdsAEeS79KKCSHhlYQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_L0WWGtsAEeS79KKCSHhlYQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_L0XkMtsAEeS79KKCSHhlYQ" elementId="com.okworx.ilcd.validation.tool.command.add" commandName="addCommand"/>
+  <commands xmi:id="_L0XkONsAEeS79KKCSHhlYQ" elementId="com.okworx.ilcd.validation.tool.command.remove" commandName="removeCommand"/>
+  <commands xmi:id="_XhAd0BAvEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.command.clear" commandName="clearCommand"/>
+  <commands xmi:id="_YiYr8BDXEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.command.start" commandName="startCommand"/>
+  <commands xmi:id="_ZC1GkBDXEeWKQ47DKGA29g" elementId="com.okworx.ilcd.validation.tool.command.stop" commandName="stopCommand"/>
+  <commands xmi:id="_L0WWG9sAEeS79KKCSHhlYQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_DqXQQBKwEeWKQ47DKGA29g" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_RyHCgIMIEeWfINjZZZAyrQ" elementId="org.eclipse.ui.window.preferences" commandName="preferencesCommand"/>
+  <commands xmi:id="_-kfEEOGpEeiMr51Sxajo-A" elementId="com.okworx.ilcd.validation.tool.command.update" commandName="updateCommand"/>
+  <commands xmi:id="_0oei0Eo0Eem8CdV9ht1Qow" elementId="com.okworx.ilcd.validation.tool.command.releasenotes" commandName="releaseNotesCommand"/>
+  <commands xmi:id="_CToQcN3_EemLbOivP8es9A" elementId="com.okworx.ilcd.validation.tool.command.consoleview" commandName="consoleViewCommand"/>
+  <commands xmi:id="_ZCwJQKpOEeq75cOkGS8wGA" elementId="com.okworx.ilcd.validation.tool.command.profileupdates" commandName="profileUpdateCommand"/>
+  <addons xmi:id="_L0WWEdsAEeS79KKCSHhlYQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_L0WWEtsAEeS79KKCSHhlYQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_L0WWE9sAEeS79KKCSHhlYQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_L0WWFNsAEeS79KKCSHhlYQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_L0WWFdsAEeS79KKCSHhlYQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_L0WWFtsAEeS79KKCSHhlYQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_L0WWF9sAEeS79KKCSHhlYQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

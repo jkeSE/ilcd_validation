@@ -1,0 +1,11 @@
+/workspace/
+.settings
+.project
+.classpath
+.factorypath
+*.iml
+.idea
+zulu_cache
+/.java-version
+/**/.DS_Store
+.claude

@@ -1,0 +1,18 @@
+image: maven:3.9-eclipse-temurin-25
+
+pipelines:
+  default:
+    - step:
+        name: Build and Test
+        caches:
+          - maven
+          - downloads
+        script:
+          - mvn -B -T 1C verify
+        after-script:
+            # Collect checkstyle results, if any, and convert to Bitbucket Code Insights.
+          - pipe: atlassian/checkstyle-report:0.2.0
+
+definitions:
+  caches:
+    downloads: bundles/open-jre-bundles/.dl_cache

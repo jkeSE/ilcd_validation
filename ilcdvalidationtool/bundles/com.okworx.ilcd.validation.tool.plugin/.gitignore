@@ -1,0 +1,15 @@
+
+# Eclipse compiler output
+/bin/
+
+# Resource files of the application (e.g. packaged HTML resources)
+#/resources/
+
+# Libraries managed by Maven
+/libs/
+
+# OS X .DS_Store files
+**/.DS_Store
+.DS_Store
+/.classpath
+/target/

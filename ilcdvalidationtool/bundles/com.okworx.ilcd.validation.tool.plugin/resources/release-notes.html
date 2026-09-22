@@ -1,0 +1,398 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./bootstrap.min.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Release Notes</h1>
+
+			<h2>Version 2.13.0</h2>
+			<p><b>Bug Fixes</b></p>
+			<ul>
+			    <li>Fix an issue with redraw issues when switching between parts (such as Profile Selection and Profile Options).</li>
+			</ul>
+			<p><b>Other</b></p>
+			<ul>
+				<li>Update Eclipse platform to 4.37.</li>
+			</ul>
+
+			<h2>Version 2.12.0</h2>
+			<p><b>Bug Fixes</b></p>
+			<ul>
+			    <li>Fix an issue where profiles would not be loaded on Windows systems when the path to the application contained spaces.</li>
+			</ul>
+			<p><b>Other</b></p>
+			<ul>
+				<li>Update Java runtime.</li>
+				<li>Update Eclipse platform.</li>
+			</ul>
+
+			<h2>Version 2.11.1</h2>
+			<p><b>Bug Fixes</b></p>
+			<ul>
+			    <li>Fix an issue where warnings would not be shown in the results if no errors were found.</li>
+			</ul>
+			<p><b>Other</b></p>
+			<ul>
+				<li>Update Java runtime.</li>
+			</ul>
+
+			<h2>Version 2.11.0</h2>
+			<p><b>Profile Updates</b></p>
+			<ul>
+			    <li>Update EF 3.1 profile to version 3.2.5 (make missing review message more precise by including types of required review).
+				</li>
+			</ul>
+			<p><b>Other</b></p>
+			<ul>
+				<li>Update Java runtime.</li>
+				<li>Update Eclipse platform.</li>
+			</ul>
+
+			<h2>Version 2.10.0</h2>
+			<p><b>What's new:</b></p>
+			<ul>
+			    <li>Fix issue where external URLs given under referenceToDigitalFile would be complained about as being not available.</li>
+			</ul>
+
+			<h2>Version 2.9.1</h2>
+			<p><b>What's new:</b></p>
+			<ul>
+			    <li>Fix issue where the order in which profiles are displayed would not be correct, also affecting the automatic hiding of previous profile versions. Now a profile with version 3.0.10 is being correctly picked up as being more recent than version 3.0.2 .</li>
+			</ul>
+			<p><b>Other</b></p>
+			<ul>
+			    <li>Update Java runtime.</li>
+			</ul>
+
+            <h2>Version 2.9.0</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>When a link to an external file cannot be resolved, an additional warning will be issued with a reminder that file names are always case sensitive and must match exactly.</li>
+            </ul>
+          	<p><b>Profile Updates</b></p>
+            <ul>
+                <li>Update EF 3.1 profile to version 3.2.4 due to technical adjustments on build process and dependencies, this version is otherwise identical to 3.2.3 regarding the rules.</li>
+            </ul>
+
+            <h2>Version 2.8.1</h2>
+          	<p><b>Profile Updates</b></p>
+            <ul>
+                <li>Update EF 3.1 profile to version 3.2.3 with fixes for correct required document names and UUIDs.</li>
+            </ul>
+          	<p><b>Other</b></p>
+            <ul>
+                <li>Update Java runtime.</li>
+            </ul>
+
+            <h2>Version 2.8.0</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Add a new option for link validation that allows for ignoring references which contain a remote link (disabled by default). This is a change in behavior as before these would always be skipped.</li>
+                <li>Improve validation options UI.</li>
+            </ul>
+
+            <h2>Version 2.7.0</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>The flow analysis now also reports the direction of the flows (in- and outputs) and differentiates further between elementary and other (product, waste, other) flows.</li>
+                <li>Cosmetic and performance improvements for flow analysis.</li>
+                <li>If there are only warnings, the validation will be regarded as successful.</li>
+            </ul>
+          	<p><b>Bug fixes</b></p>
+            <ul>
+                <li>Misc. bug fixes.</li>
+            </ul>
+          	<p><b>Other</b></p>
+            <ul>
+                <li>Update Java runtime.</li>
+            </ul>
+
+            <h2>Version 2.6.0</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Fix an issue where batch mode would not work due to the change of the Java runtime in 2.5.6.</li>
+                <li>Fix an issue with a missing theme that would cause the UI to look a bit ugly.</li>
+                <li>Fix an issue with the auto-update functionality.</li>
+                <li>Update Eclipse Platform to 4.26.</li>
+            </ul>
+
+            <h2>Version 2.5.6</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Update EF 3.1 profile to version 3.2.0, adding a check for the rule that only one reference flow is allowed.</li>
+                <li>Update EF 3.0 profile to version 3.3.0 with the same rule as above.</li>
+                <li>Update Java runtime.</li>
+            </ul>
+
+            <h2>Version 2.5.5</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Update EF 3.0 profile to version 3.2.3 which rolls back the numerical vs. textual DQR checks.</li>
+                <li>Add EF 3.1 profile.</li>
+            </ul>
+            
+            <h2>Version 2.5.4</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Raise XML processing limits introduced by recent JRE update to prevent failure of XSLT stylesheet loading.</li>
+                <li>Fail the current validation if there is an application error.</li>
+            </ul>
+            
+            <h2>Version 2.5.3</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Speed up loading of composite profiles.</li>
+                <li>Cosmetic improvements to the display of profile versions in the profile chooser.</li>
+            </ul>
+            
+            <h2>Version 2.5.2</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Update EF 3.0 validation profile to version 3.2.2 with fix for DQRs checking.</li>
+            </ul>
+            
+            <h2>Version 2.5.1</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Update EF 3.0 validation profile with refined rules (LCIA results required, text fields must be non-empty, DQRs required for every independent/3rd party review, numerical and textual values of DQRs must match). See the profile change log for details.</li>
+                <li>Update Java runtime.</li>
+            </ul>
+            
+            <h2>Version 2.5.0</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>In batch mode, it is now possible to optionally generate an analysis that shows which elementary flows are being used by the process datasets to be validated. It shows the number of occurences and optionally the sum of the respective amounts for each elementary flow per process and is based on the elementary flow list from the selected profile.</li>
+            </ul>
+            
+            <h2>Version 2.4.4</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>The summary extraction in batch mode now includes information about resulting processes and reference process for life cycle model datasets.</li>
+            </ul>
+            
+            <h2>Version 2.4.3</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>The summary extraction in batch mode will now also consider any life cycle model datasets if present.</li>
+                <li>Upgrade log4j from 1.2.x to latest 2.17.1.</li>
+                <li>Update Java runtime.</li>
+            </ul>
+
+            <h2>Version 2.4.2</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Add support for HiDPI displays, update icons and graphics.</li>
+                <li>Update EF 3.0 and 2.0 profiles to versions 3.1.2 and 2.0.10, respectively, including additional checks for mandatory declaration of compliance systems in EF datasets.</li>                
+            </ul>
+
+            <h2>Version 2.4.1</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Link validation will generate a warning when a file extension different than PNG or JP(E)G (case insensitive) is used on a file referenced under <code>process:referenceToTechnologyFlowDiagrammOrPicture</code>, <code>process:referenceToTechnologyPictogramme</code> or <code>lcm:referenceToDiagram</code>.</li>
+                <li>Update EF 3.0 profile to version 3.1.1, which includes additional checks for allowed characters in file names of source attachments.</li>                
+            </ul>
+
+            <h2>Version 2.4.0</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Add option to generate an additional summary of all processes when validating in batch mode.</li>                
+            </ul>
+
+            <h2>Version 2.3.8</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Add option to exclude references under "reference to preceding dataset version" from Link validation (defaults to true).</li>                
+            </ul>
+
+            <h2>Version 2.3.7</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Update EF 3.0 profile to version 3.1.0, it now includes some additional checks for life cycle model datasets a.k.a. eILCD.</li>
+                <li>Fix issue with line wrapping of profile description.</li>                
+            </ul>
+
+            <h2>Version 2.3.6</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>Fix issue with running the tool on macOS 11 (Big Sur).</li>
+                <li>Provide native build for macOS on M1.</li>                
+                <li>Update Java runtime.</li>
+            </ul>
+            
+            <h2>Version 2.3.5</h2>
+            <p><b>Bug fixes:</b></p>
+            <ul>
+                <li>Fix issue with URI resolution for profile specific rules.</li>
+            </ul>
+            
+            <h2>Version 2.3.4</h2>
+            <p><b>Bug fixes:</b></p>
+            <ul>
+                <li>Fix broken/cut off display of profile description.</li>
+                <li>Fix possible issue with honoring validation aspect "Profile Specific Rules" in some validation profiles.</li>
+            </ul>
+
+            <h2>Version 2.3.3</h2>
+            <p><b>Bug fixes:</b></p>
+            <ul>
+                <li>Fix an issue with loading composite profiles under Windows.</li>
+            </ul>
+
+            <h2>Version 2.3.2</h2>
+            <p><b>Bug fixes:</b></p>
+            <ul>
+                <li>Fix duplicate messages for positive messages.</li>
+                <li>Fix statistics which would not report accurate numbers.</li>
+            </ul>
+
+            <h2>Version 2.3.1</h2>
+            <p><b>Bug fixes:</b></p>
+            <ul>
+                <li>A platform specific issue has been fixed where reference objects would not correctly be loaded from
+                    profiles on Windows platforms.
+                </li>
+            </ul>
+
+            <h2>Version 2.3.0</h2>
+            <p><b>What's new:</b></p>
+            <ul>
+                <li>The EF 3.0 validation profile has been updated with the latest eILCD 2.0 schema.</li>
+                <li>Support for displaying the changelogs of validation profiles has been added.</li>
+            </ul>
+
+            <h2>Version 2.2.3</h2>
+          	<p><b>What's new:</b></p>
+            <ul>
+                <li>The EF validation profiles have been updated with a bug fix that prevented execution of
+                    profile-specific rules.
+                </li>
+            </ul>
+
+            <h2>Version 2.2.2</h2>
+            <p><b>What's new:</b></p>
+            <ul>
+                <li>Performance has been improved for large numbers of validation messages in batch mode.</li>
+                <li>In batch mode, the Validation Tool version is now shown in the log.</li>
+                <li>In batch mode, only the file name and parent folder (instead of the full path) are shown in the log
+                    for better privacy.
+                </li>
+                <li>The Java runtime has been updated to the latest version.</li>
+            </ul>
+
+            <h2>Version 2.2.1</h2>
+            <p><b>What's new:</b></p>
+            <ul>
+                <li>New validation option to exclude reference objects.</li>
+                <li>New option to show or hide previous profile versions.</li>
+                <li>New dialog before the profile list gets cleared.</li>
+                <li>The Java runtime has been updated to the latest version.</li>
+            </ul>
+
+            <h2>Version 2.1.1</h2>
+            <p><b>What's new:</b></p>
+            <ul>
+                <li>In batch mode, no empty sheets will be written into the XLS reports for a leaner experience.</li>
+            </ul>
+            <p><b>Bug fixes:</b></p>
+            <ul>
+                <li>Fix an issue where invalid (e.g. not well-formed) XML would not be reported in batch mode.</li>
+            </ul>
+
+
+            <h2>Version 2.1</h2>
+            <p><b>What's new:</b></p>
+            <ul>
+                <li>
+                    Profiles now ship with presets for aspects. When you select a profile, the most relevant aspects
+                    will automatically be selected.
+                </li>
+                <li>
+                    Profiles are now nicely sorted by name and version.
+                </li>
+                <li>
+                    The profile description is now shown for each profile.
+                </li>
+                <li>
+                    Outdated profiles can be removed automagically.
+                </li>
+                <li>
+                    The link options "Ignore 'complementing processes'" and "Ignore 'included processes'" are now
+                    enabled by default.
+                </li>
+                <li>
+                    Added a nice little splash screen at startup.
+                </li>
+                <li>
+                    A console view can be opened for debugging purposes.
+                </li>
+                <li>
+                    The Java runtime has been updated to the latest version.
+                </li>
+            </ul>
+            <p><b>Bug fixes</b></p>
+            <ul>
+                <li>
+                    Fixed an issue where automatic update of profiles would fail in some cases.
+                </li>
+            </ul>
+
+            <h2>Version 2.0.1</h2>
+            <p><b>Bug fixes</b></p>
+            <ul>
+                <li>
+                    Fixed an issue where validation profiles would not be loaded and thus not correctly interpreted,
+                    resulting in wrong validation results.
+                </li>
+            </ul>
+
+            <h2>Version 2.0.0</h2>
+            <p><b>What's new:</b></p>
+            <ul>
+                <li>
+                    What's new? First of all you'll notice this new pane which shows
+                    you the release notes for the new application version. It will
+                    appear only once upon starting the new application version. Close
+                    it with the "X".
+                </li>
+                <li>
+                    Auto-update: the application will watch out for updates and
+                    download and install them automagically.
+                </li>
+                <li>
+                    The latest profile updates will be shipped along with these
+                    updates.
+                </li>
+                <li>
+                    Batch mode: with a new option, available under "Options/General",
+                    the validation results for the selected aspects will be written to
+                    the file system as a report in XLS format. The resulting report
+                    will be written right next to each source folder/ZIP file to be
+                    checked.
+                </li>
+                <li>
+                    In the profile selector, now multiple versions of a profile can be
+                    chosen from.
+                </li>
+            </ul>
+
+            <p><b>Bug fixes</b></p>
+            <ul>
+                <li>
+                    Fixed an issue where an error would occur when selecting a profile
+                    which had been removed from the file system: newly added profiles
+                    are now copied to the internal profile directory.
+                </li>
+                <li>
+                    Links/Orphans validation: an issue where links starting with
+                    "https://" weren't treated correctly has been fixed.
+                </li>
+                <li>numerous other fixes</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

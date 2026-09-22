@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+      <extension id="product" point="org.eclipse.core.runtime.products">
+            <product application="org.eclipse.e4.ui.workbench.swt.E4Application" name="ILCD Validation Tool">
+                  <property name="lifeCycleURI" value="bundleclass://com.okworx.ilcd.validation.tool.plugin/com.okworx.ilcd.validation.tool.rcp.LifeCycle" />
+                  <property name="appName" value="ILCD Validation Tool">
+                  </property>
+                  <property name="windowImages" value="resources/icons/ILCDValidator-16.png,resources/icons/ILCDValidator-32.png,resources/icons/ILCDValidator-48.png,resources/icons/ILCDValidator-64.png,resources/icons/ILCDValidator-128.png,resources/icons/ILCDValidator-256.png">
+                  </property>
+                  <property
+                        name="startupForegroundColor"
+                        value="000000">
+                  </property>
+                  <property
+                        name="startupMessageRect"
+                        value="7,252,445,20">
+                  </property>
+                  <property
+                        name="startupProgressRect"
+                        value="5,275,445,15">
+                  </property>
+                  <property
+                        name="preferenceCustomization"
+                        value="plugin_customization.ini">
+                  </property>
+            </product>
+      </extension>
+
+</plugin>

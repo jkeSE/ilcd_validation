@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>com.okworx.ilcd.validation.tool.feature</artifactId>
+	<parent>
+		<groupId>com.okworx.ilcd.validation</groupId>
+		<artifactId>com.okworx.ilcd.validation.tool.root</artifactId>
+		<version>2.14.0</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+	<packaging>eclipse-feature</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.okworx.ilcd.validation</groupId>
+			<artifactId>com.okworx.ilcd.validation.tool.plugin</artifactId>
+			<version>2.14.0</version>
+		</dependency>
+	</dependencies>
+
+</project>

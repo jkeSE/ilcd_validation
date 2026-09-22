@@ -1,0 +1,11 @@
+<project name="ILCD Validator Tool Deploy" default="deploy" xmlns:if="ant:if" xmlns:unless="ant:unless">
+	<property file="local.properties"/>
+	<target name="deploy" if="${deploy.server}">
+		<input message="Enter Password: " addproperty="deploy.password">
+			<handler type="secure" />
+		</input>
+		<ftp server="${deploy.server}" userid="${deploy.server.userid}" password="${deploy.password}" verbose="yes" retriesAllowed="10">
+			<fileset dir="target/repository/" />
+		</ftp>
+	</target>
+</project>

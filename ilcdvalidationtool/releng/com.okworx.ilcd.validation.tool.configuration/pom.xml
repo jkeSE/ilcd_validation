@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.okworx.ilcd.validation</groupId>
+	<artifactId>com.okworx.ilcd.validation.tool.configuration</artifactId>
+	<version>2.14.0</version>
+	<packaging>pom</packaging> 
+
+	<properties>
+		<tycho-version>5.0.4</tycho-version>
+		<jarsigner.plugin.version>3.0.0</jarsigner.plugin.version>
+		<jarsigner.skip>true</jarsigner.skip>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>25</maven.compiler.source>
+		<maven.compiler.target>25</maven.compiler.target>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>eclipse-2026-09</id>
+			<url>https://download.eclipse.org/eclipse/updates/4.41/</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+      		<id>justj</id>
+      		<url>https://download.eclipse.org/justj/jres/25/updates/release/latest/</url>
+      		<layout>p2</layout>
+ 		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>enforce-maven</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>3.8</version>
+								</requireMavenVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+ 					<executionEnvironment>org.eclipse.justj.openjdk.hotspot.jre.full.stripped-25</executionEnvironment>
+    			    <target>
+				        <artifact>
+				            <groupId>com.okworx.ilcd.validation</groupId>
+				            <artifactId>target-platform</artifactId>
+				            <version>1.0.0-SNAPSHOT</version>
+				        </artifact>
+    				</target>
+<!--     				<resolveWithExecutionEnvironmentConstraints>false</resolveWithExecutionEnvironmentConstraints> -->
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>aarch64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

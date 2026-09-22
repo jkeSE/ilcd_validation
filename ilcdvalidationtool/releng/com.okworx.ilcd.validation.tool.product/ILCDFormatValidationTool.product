@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="ILCD Validation Tool" uid="com.okworx.ilcd.validation.tool.product" id="com.okworx.ilcd.validation.tool.plugin.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="2.14.0" type="features" includeLaunchers="true" includeJRE="true" autoIncludeRequirements="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-clearPersistedState
+      </programArgs>
+      <programArgsLin>--launcher.GTK_version
+3
+      </programArgsLin>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/com.okworx.ilcd.validation.tool.plugin/resources/icons/ILCDValidator-16.png" i32="/com.okworx.ilcd.validation.tool.plugin/resources/icons/ILCDValidator-32.png" i48="/com.okworx.ilcd.validation.tool.plugin/resources/icons/ILCDValidator-48.png" i64="/com.okworx.ilcd.validation.tool.plugin/resources/icons/ILCDValidator-64.png" i128="/com.okworx.ilcd.validation.tool.plugin/resources/icons/ILCDValidator-128.png" i256="/com.okworx.ilcd.validation.tool.plugin/resources/icons/ILCDValidator-256.png"/>
+
+   <splash
+      location="com.okworx.ilcd.validation.tool.plugin"
+      startupProgressRect="5,275,445,15"
+      startupMessageRect="7,252,445,20"
+      startupForegroundColor="000000" />
+   <launcher name="ILCDValidationTool">
+      <linux icon="/resources/icons/ILCDValidator-256_32bit.xpm"/>
+      <macosx icon="/resources/icons/ILCDValidator.icns"/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/resources/icons/ILCDValidator-16_32bit.bmp"
+            winSmallLow="/resources/icons/ILCDValidator-16_8bit.bmp"
+            winMediumHigh="/resources/icons/ILCDValidator-32_32bit.bmp"
+            winMediumLow="/resources/icons/ILCDValidator-32_8bit.bmp"
+            winLargeHigh="/resources/icons/ILCDValidator-48_32bit.bmp"
+            winLargeLow="/resources/icons/ILCDValidator-48_8bit.bmp"
+            winExtraLargeHigh="/resources/icons/ILCDValidator-256_32bit.bmp"/>
+      </win>
+   </launcher>
+
+
+   <vm>
+      <linux include="true">org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64</linux>
+      <macos include="true">org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64</macos>
+      <windows include="true">org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64</windows>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.e4.rcp"/>
+      <feature id="com.okworx.ilcd.validation.tool.feature" installMode="root"/>
+      <feature id="org.eclipse.justj.openjdk.hotspot.jre.full.stripped"/>
+   </features>
+
+   <configurations>
+      <plugin id="com.okworx.ilcd.validation.tool.plugin" autoStart="false" startLevel="5" />
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="1" />
+      <property name="persistState" value="false" />
+      <property name="osgi.instance.area.default" value="@user.home/ILCDValidationTool" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>
