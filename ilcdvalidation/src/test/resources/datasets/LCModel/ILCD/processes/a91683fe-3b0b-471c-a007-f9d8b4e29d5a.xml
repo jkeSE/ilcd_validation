@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" version="1.1" locations="../ILCDLocations.xml" metaDataOnly="false" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>a91683fe-3b0b-471c-a007-f9d8b4e29d5a</common:UUID>
+            <name>
+                <baseName xml:lang="en">eILCD-example - 5 parts at 0.2 kg/part</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Materials production</common:class>
+                    <common:class level="1">Other materials</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The data set is purely illustrative in support of the eILCD format extension and does not reflect any real product. Note that the LCI results of this data set are not identical to the resuts obtained when aggregating the model and calculating results.</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>460</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time>
+            <common:referenceYear>2017</common:referenceYear>
+            <common:dataSetValidUntil>2018</common:dataSetValidUntil>
+        </time>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>LCI result</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <percentageSupplyOrProductionCovered>0.0</percentageSupplyOrProductionCovered>
+            <useAdviceForDataSet xml:lang="en">This data set is for illustrative purposes of the eILCD format only and not reflecting actual production/operation of any product.</useAdviceForDataSet>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <completeness>
+            <completenessProductModel>No statement</completenessProductModel>
+            <completenessElementaryFlows type="Climate change" value="No statement"/>
+            <completenessElementaryFlows type="Ozone depletion" value="No statement"/>
+            <completenessElementaryFlows type="Summer smog" value="No statement"/>
+            <completenessElementaryFlows type="Eutrophication" value="No statement"/>
+            <completenessElementaryFlows type="Acidification" value="No statement"/>
+            <completenessElementaryFlows type="Human toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="No statement"/>
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Radioactivity" value="No statement"/>
+            <completenessElementaryFlows type="Land use" value="No statement"/>
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="No statement"/>
+            <completenessElementaryFlows type="Renewable material resource consumption" value="No statement"/>
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="No statement"/>
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="No statement"/>
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="No statement"/>
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+        </completeness>
+        <validation/>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <common:commissionerAndGoal/>
+        <dataGenerator/>
+        <dataEntryBy>
+            <common:timeStamp>2017-07-23T21:39:38.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2017-07-23T21:39:38.000</common:dateOfLastRevision>
+            <common:dataSetVersion>01.00.000</common:dataSetVersion>
+            <common:workflowAndPublicationStatus>Working draft</common:workflowAndPublicationStatus>
+            <common:copyright>false</common:copyright>
+            <common:licenseType>Free of charge for all users and uses</common:licenseType>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange dataSetInternalID="0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="04202049-6556-11dd-ad8b-0800200c9a66" version="03.00.000" uri="../flows/04202049-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">primary energy from waves</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.34194005687296E-11</meanAmount>
+            <resultingAmount>1.34194005687296E-11</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="04202047-6556-11dd-ad8b-0800200c9a66" version="03.00.000" uri="../flows/04202047-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">primary energy from hydro power</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.555149505124237</meanAmount>
+            <resultingAmount>0.555149505124237</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="2">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6ff-0050c2490048" version="03.00.000" uri="../flows/fe0acd60-3ddc-11dd-a6ff-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">inert rock</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.0072979580853012</meanAmount>
+            <resultingAmount>2.0072979580853012</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="3">
+            <referenceToFlowDataSet type="flow data set" refObjectId="29068976-6556-11dd-ad8b-0800200c9a66" version="03.00.000" uri="../flows/29068976-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">tin</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.477802631077317E-11</meanAmount>
+            <resultingAmount>8.477802631077317E-11</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923c-0050c2490048" version="03.00.000" uri="../flows/08a91e70-3ddc-11dd-923c-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0172076908272198</meanAmount>
+            <resultingAmount>0.0172076908272198</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="97">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9dee-0050c2490048" version="03.00.000" uri="../flows/08a91e70-3ddc-11dd-9dee-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">carbonate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0240506078562853</meanAmount>
+            <resultingAmount>0.0240506078562853</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="98">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a822-0050c2490048" version="03.00.000" uri="../flows/fe0acd60-3ddc-11dd-a822-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">dodecane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.10727269999501E-23</meanAmount>
+            <resultingAmount>2.10727269999501E-23</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="99">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9198-0050c2490048" version="03.00.000" uri="../flows/08a91e70-3ddc-11dd-9198-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">acenaphthene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.16426581287877E-6</meanAmount>
+            <resultingAmount>2.16426581287877E-6</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="100">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-91a4-0050c2490048" version="03.00.000" uri="../flows/08a91e70-3ddc-11dd-91a4-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">acrolein</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.98532196478578E-5</meanAmount>
+            <resultingAmount>1.98532196478578E-5</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="460">
+            <referenceToFlowDataSet type="flow data set" refObjectId="336b1168-c3ea-4b5c-9955-beb577f3c005" version="28.00.000" uri="../flows/336b1168-c3ea-4b5c-9955-beb577f3c005.xml">
+                <common:shortDescription xml:lang="en">Plastic part (unspecified)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+    </exchanges>
+</processDataSet>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="18.0">
+    <meta>
+        <filters directoryPatterns="" filePatterns="validation_testcases.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="validation_testcases.xpr">
+        <folder path="../../../main/resources/profiles/"/>
+        <folder path="."/>
+    </projectTree>
+</project>

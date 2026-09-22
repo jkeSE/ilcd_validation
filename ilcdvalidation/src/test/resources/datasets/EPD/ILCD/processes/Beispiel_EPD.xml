@@ -1,0 +1,211 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type='text/xsl' href='../../stylesheets/epd2html.xsl' ?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:process="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common"
+    xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" version="1.1"
+    xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/EPD_DataSet.xsd">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>57a4ae65-d305-421e-b21f-a3f0c35b8abe</common:UUID>
+            <name>
+                <baseName xml:lang="de">Name des Produktes/ Systemes</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification classes="../GaBiCategories.xml">
+                    <common:class level="0">8 Gebäudetechnik</common:class>
+                    <common:class level="1">8.7 EoL Gebäudetechnik</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="de">Hier kann ein allgemeiner Kommentar eingetragen werden</common:generalComment>
+            <referenceToExternalDocumentation uri="" type="source data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                <common:shortDescription xml:lang="de">Hier kann z.B. der AUB Hintergrundbericht angehängt werden</common:shortDescription>
+            </referenceToExternalDocumentation>
+            <common:other>
+                <!-- mehrere unabhängige Gruppen von Szenarien können definiert werden, dabei kann jeweils ein standarmäßiges angegeben werden -->
+                <epd:scenarios>
+                    <epd:scenario epd:name="Sc1" epd:group="1" epd:default="true">
+                        <epd:description xml:lang="de">Beschreibung des Szenarios Sc1</epd:description>
+                        <epd:description xml:lang="en">description of scenario Sc1</epd:description>
+                        <epd:description xml:lang="it">descrizione dello scenario Sc1</epd:description>
+                    </epd:scenario>
+                    <epd:scenario epd:name="Sc2" epd:group="1">
+                        <epd:description xml:lang="de">Beschreibung des Szenarios Sc2</epd:description>
+                    </epd:scenario>
+                    <epd:scenario epd:name="S1" epd:group="2">
+                        <epd:description xml:lang="de">Beschreibung des Szenarios S1</epd:description>
+                        <epd:description xml:lang="en">description of scenario S1</epd:description>
+                        <epd:description xml:lang="it">descrizione dello scenario S1</epd:description>
+                    </epd:scenario>
+                    <epd:scenario epd:name="S2" epd:group="2" epd:default="true">
+                        <epd:description xml:lang="de">Beschreibung des Szenarios S2</epd:description>
+                    </epd:scenario>
+                </epd:scenarios>
+                <epd:safetyMargins>
+                    <epd:margins>10</epd:margins>
+                    <epd:description xml:lang="en">Reasons for choice of safety margins</epd:description>
+                    <epd:description xml:lang="de">Begründung für Sicherheitszuschläge</epd:description>
+                </epd:safetyMargins>
+            </common:other>
+        </dataSetInformation>
+        <!-- NEU: quantitativeReference muß wieder rein, um den Referenzfluß zu identifizieren -->
+        <quantitativeReference>
+            <referenceToReferenceFlow>42</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time>
+            <common:referenceYear>2006</common:referenceYear>
+            <common:dataSetValidUntil>2010</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="Gebiet für das der Datensatz repräsentativ ist"/>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="de">Kurze Beschreibung des Materials/ Systemes incl. kurze Berschreibung desHerstellprozesses....die ausführliche
+        Beschreibung findet sich im EPD, das im Feld &quot;data sources&quot; angehängt wird, falls vorhanden</technologyDescriptionAndIncludedProcesses>
+            <technologicalApplicability xml:lang="de">Technisches Anwendungsgebiet</technologicalApplicability>
+            <referenceToTechnologyPictogramme type="source data set" refObjectId="00000000-0000-0000-0000-000000000000">
+                <common:shortDescription xml:lang="en">description of pictogramme</common:shortDescription>
+            </referenceToTechnologyPictogramme>
+            <referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="00000000-0000-0000-0000-000000000000">
+                <common:shortDescription xml:lang="en">Description of diagram</common:shortDescription>
+            </referenceToTechnologyFlowDiagrammOrPicture>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>EPD</typeOfDataSet>
+            <!-- NEU: Referenz zum PCR-Dokument -->
+            <referenceToLCAMethodDetails type="source data set" refObjectId="00000000-0000-0000-0000-000000000000">
+                <common:shortDescription xml:lang="en">reference to PCR document</common:shortDescription>
+                <common:shortDescription xml:lang="de">Referenz zum PCR-Dokument</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <common:other>
+                <!-- NEU: subType, may be one of: generic dataset, representative dataset, average dataset, specific dataset, template dataset -->
+                <epd:subType>average dataset</epd:subType>
+            </common:other>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource uri="" type="source data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                <common:shortDescription xml:lang="de">Hier können EPDs angehängt werden</common:shortDescription>
+            </referenceToDataSource>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review type="Not reviewed">
+                <common:referenceToNameOfReviewerAndInstitution uri="" type="contact data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                    <common:shortDescription xml:lang="de">Wenn ein externes review durchgeführt wurde, dann kommt hier der Link zu Reviewer</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+                <common:referenceToCompleteReviewReport uri="" type="source data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                    <common:shortDescription xml:lang="de">Wenn ein externes review durchgeführt wurde, dann wird hier das Review angehängt</common:shortDescription>
+                </common:referenceToCompleteReviewReport>
+            </review>
+        </validation>
+        <!-- NEU: für die Differenzierung entsprechend der Prüfung wird Compliance verwendet -->
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" uri="../sources/b00f9ec0-7874-11e3-981f-0800200c9a66.xml"
+                    refObjectId="b00f9ec0-7874-11e3-981f-0800200c9a66">
+                    <common:shortDescription xml:lang="de">DIN EN 15804</common:shortDescription>
+                </common:referenceToComplianceSystem>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2007-08-03T13:53:05.226+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set"
+                uri="../sources/ILCD_Format_a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="de">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="cba73800-7874-11e3-981f-0800200c9a66" uri="../sources/cba73800-7874-11e3-981f-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">EPD Data Format Extensions</common:shortDescription>
+                <common:shortDescription xml:lang="de">EPD-Datenformaterweiterungen</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                <common:shortDescription xml:lang="de">Daten eingegeben durch</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>00.01.000</common:dataSetVersion>
+            <common:dateOfLastRevision>2014-05-22T10:42:00+01:00</common:dateOfLastRevision>
+            <common:referenceToOwnershipOfDataSet uri="" type="contact data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                <common:shortDescription xml:lang="de">Verband, der Material/ System repräsentiert</common:shortDescription>
+            </common:referenceToOwnershipOfDataSet>
+            <common:copyright>true</common:copyright>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <!-- Referenzfluß -->
+        <exchange dataSetInternalID="42">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa" uri="../flows/referenceflow.xml">
+                <common:shortDescription xml:lang="de">Name des Referenzflusses</common:shortDescription>
+            </referenceToFlowDataSet>
+            <meanAmount>1</meanAmount>
+        </exchange>
+        <!-- NEU: LCI-Indikatoren als exchanges modelliert, mit Ausweis der Phase, auf die sich der jeweilige exchange bezieht - referenceToFlowProperty zeigt auf einen FlowProperty-Datensatz -->
+        <exchange dataSetInternalID="0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                <common:shortDescription xml:lang="de">Gesamteinsatz erneuerbarer Primärenergie</common:shortDescription>
+            </referenceToFlowDataSet>
+            <functionType>General reminder flow</functionType>
+            <exchangeDirection>Input</exchangeDirection>
+            <common:other>
+                <epd:amount epd:module="A1-A3">89</epd:amount>
+                <epd:amount epd:module="A4" epd:scenario="Sc1">16</epd:amount>
+                <epd:amount epd:module="A4" epd:scenario="Sc2">9</epd:amount>
+                <epd:amount epd:module="C3" epd:scenario="S1">0.5</epd:amount>
+                <epd:amount epd:module="C3" epd:scenario="S2">0.3</epd:amount>
+                <epd:referenceToUnitGroupDataSet type="unit group data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                    <common:shortDescription xml:lang="de">MJ</common:shortDescription>
+                </epd:referenceToUnitGroupDataSet>
+            </common:other>
+        </exchange>
+        <exchange dataSetInternalID="1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                <common:shortDescription xml:lang="de">Abgelagerter gefährlicher Abfall</common:shortDescription>
+            </referenceToFlowDataSet>
+            <functionType>General reminder flow</functionType>
+            <exchangeDirection>Output</exchangeDirection>
+            <common:other>
+                <epd:amount epd:module="A1-A3">7</epd:amount>
+                <epd:amount epd:module="A4" epd:scenario="Sc1">2</epd:amount>
+                <epd:amount epd:module="A4" epd:scenario="Sc2">1</epd:amount>
+                <epd:amount epd:module="C3" epd:scenario="S1">3</epd:amount>
+                <epd:amount epd:module="C3" epd:scenario="S2">1.2</epd:amount>
+                <epd:referenceToUnitGroupDataSet type="unit group data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                    <common:shortDescription xml:lang="de">kg</common:shortDescription>
+                </epd:referenceToUnitGroupDataSet>
+            </common:other>
+        </exchange>
+    </exchanges>
+    <!-- NEU: LCIA-Indikatoren als LCIAResults, mit Ausweis der Werte für die einzelnen Phasen - referenceToLCIAMethodDataSet zeigt auf LCIAMethod-Datensatz -->
+    <LCIAResults>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet type="LCIA method data set">
+                <common:shortDescription xml:lang="de">Treibhauspotential (GWP 100)</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <common:other>
+                <epd:amount epd:module="A1-A3">42</epd:amount>
+                <epd:amount epd:module="A4" epd:scenario="Sc1">3</epd:amount>
+                <epd:amount epd:module="A4" epd:scenario="Sc2">2</epd:amount>
+                <epd:amount epd:module="C3" epd:scenario="S1">22</epd:amount>
+                <epd:amount epd:module="C3" epd:scenario="S2">7</epd:amount>
+                <epd:referenceToUnitGroupDataSet type="unit group data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                    <common:shortDescription xml:lang="de">kg CO2-Äqv.</common:shortDescription>
+                </epd:referenceToUnitGroupDataSet>
+            </common:other>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet type="LCIA method data set">
+                <common:shortDescription xml:lang="de">Versauerungspotential (AP)</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <common:other>
+                <epd:amount epd:module="A1-A3">0.0004</epd:amount>
+                <epd:amount epd:module="A4" epd:scenario="Sc1">0.0001</epd:amount>
+                <epd:amount epd:module="A4" epd:scenario="Sc2">0.0002</epd:amount>
+                <epd:amount epd:module="C3" epd:scenario="S1">0.8</epd:amount>
+                <epd:amount epd:module="C3" epd:scenario="S2">0.1</epd:amount>
+                <epd:referenceToUnitGroupDataSet type="unit group data set" refObjectId="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa">
+                    <common:shortDescription xml:lang="de">kg SO2-Äqv.</common:shortDescription>
+                </epd:referenceToUnitGroupDataSet>
+            </common:other>
+        </LCIAResult>
+    </LCIAResults>
+</processDataSet>

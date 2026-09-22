@@ -1,0 +1,8 @@
+Initial design and implementation by Oliver Kusche (ok*worx)
+
+Other contributors
+	Dominik Ehrler (ok*worx)
+    Michael Srocka (GreenDelta)
+	Mahmoud Khaled (ok*worx)
+	Patrick Laun (ok*worx)
+	Elias Maier (ok*worx)

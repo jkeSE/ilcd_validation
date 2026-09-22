@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/source2html.xsl" type="text/xsl"?>
+<sourceDataSet xmlns="http://lca.jrc.it/ILCD/Source" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://lca.jrc.it/ILCD/Source ../../schemas/ILCD_SourceDataSet.xsd" version="1.1">
+  <sourceInformation>
+    <dataSetInformation>
+      <common:UUID>6df7ba00-86d1-11db-b606-0800200c9a66</common:UUID>
+      <common:shortName xml:lang="en">GaBi databases 2006</common:shortName>
+      <classificationInformation>
+        <common:classification>
+          <common:class level="0">Databases</common:class>
+        </common:classification>
+      </classificationInformation>
+      <sourceCitation>PE INTERNATIONAL GmbH; LBP-GaBi, University of Stuttgart: GaBi Software System, Leinfelden-Echterdingen / Germany, 2009</sourceCitation>
+      <publicationType>Software or database</publicationType>
+      <sourceDescriptionOrComment xml:lang="en">http://documentation.gabi-software.com</sourceDescriptionOrComment>
+      <referenceToContact refObjectId="623edf96-39d1-4e6f-9892-674c7228546b" version="03.00.000" type="contact data set" uri="../contacts/623edf96-39d1-4e6f-9892-674c7228546b.xml">
+        <common:shortDescription xml:lang="en">PE INTERNATIONAL</common:shortDescription>
+      </referenceToContact>
+    </dataSetInformation>
+  </sourceInformation>
+  <administrativeInformation>
+    <dataEntryBy>
+      <common:timeStamp>2010-07-31T00:00:00+01:00</common:timeStamp>
+      <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+        <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+      </common:referenceToDataSetFormat>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dataSetVersion>03.00.000</common:dataSetVersion>
+    </publicationAndOwnership>
+  </administrativeInformation>
+</sourceDataSet>

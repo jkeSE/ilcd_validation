@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" version="1.1" locations="../ILCDLocations.xml" metaDataOnly="false" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>e642549a-ed92-4db7-a877-5b53e5acdd8c</common:UUID>
+            <name>
+                <baseName xml:lang="en">End-of-life treatment of injection moulding machine</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">End-of-life treatment</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The data set is purely illustrative in support of the eILCD format extension and does not reflect any real product.</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>0</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time>
+            <common:referenceYear>2013</common:referenceYear>
+            <common:dataSetValidUntil>2016</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">annual average</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="DE">
+                <descriptionOfRestrictions xml:lang="en">The data set represents the country / region specific situation, focusing on the main technologies, the region specific characteristics and / or import statistics.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">In the injection moulding machine recycling process, the end-of-life machines are colected at the source, transported to the recycler and end-of-life treated entirely, in a combination of material recycling, energetic recovery and landfilling of the remaining waste. The cradle-to-gate production chains of all consumables are included, and credits for the recovered materials are included as well.</technologyDescriptionAndIncludedProcesses>
+            <technologicalApplicability xml:lang="en">Provision of a standard tend-of-life treatment for injection moulding machines.</technologicalApplicability>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>LCI result</typeOfDataSet>
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+            <deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+            <LCIMethodApproaches>Not applicable</LCIMethodApproaches>
+            <deviationsFromLCIMethodApproaches xml:lang="en">None</deviationsFromLCIMethodApproaches>
+            <modellingConstants xml:lang="en">All data used in the calculation of the LCI results refer to net calorific value.</modellingConstants>
+            <deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="f2b512cd-43b2-4260-9882-eebc06731274" version="28.00.000" uri="../sources/f2b512cd-43b2-4260-9882-eebc06731274.xml">
+                <common:shortDescription xml:lang="en">GaBi Modelling Principles</common:shortDescription>
+            </referenceToLCAMethodDetails>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <dataCutOffAndCompletenessPrinciples xml:lang="en">Cut-off rules for each unit process: Coverage of at least 95 % of mass and energy of the input and output flows, and 98 % of their environmental relevance (according to expert judgement.</dataCutOffAndCompletenessPrinciples>
+            <deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+            <dataSelectionAndCombinationPrinciples xml:lang="en">For details please see the document "GaBi Databases Modelling Principles"</dataSelectionAndCombinationPrinciples>
+            <deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+            <dataTreatmentAndExtrapolationsPrinciples xml:lang="en">For details please see the document "GaBi Databases Modelling Principles"</dataTreatmentAndExtrapolationsPrinciples>
+            <deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+            <referenceToDataSource type="source data set" refObjectId="d273be76-5fbd-11db-b0de-0800200c9a66" version="28.00.000" uri="../sources/d273be76-5fbd-11db-b0de-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Average Industry Data , 2005-2015</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource type="source data set" refObjectId="d273be75-5fbd-11db-b0de-0800200c9a66" version="28.00.000" uri="../sources/d273be75-5fbd-11db-b0de-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Patent-/ Technical Literature, 1999-2006</common:shortDescription>
+            </referenceToDataSource>
+            <percentageSupplyOrProductionCovered>95.0</percentageSupplyOrProductionCovered>
+            <uncertaintyAdjustments xml:lang="en">None</uncertaintyAdjustments>
+            <useAdviceForDataSet xml:lang="en">The data set is purely illustrative in support of the eILCD format extension and does not reflect any real product..</useAdviceForDataSet>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <completeness>
+            <completenessProductModel>No statement</completenessProductModel>
+            <completenessElementaryFlows type="Climate change" value="No statement"/>
+            <completenessElementaryFlows type="Ozone depletion" value="No statement"/>
+            <completenessElementaryFlows type="Summer smog" value="No statement"/>
+            <completenessElementaryFlows type="Eutrophication" value="No statement"/>
+            <completenessElementaryFlows type="Acidification" value="No statement"/>
+            <completenessElementaryFlows type="Human toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="No statement"/>
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Radioactivity" value="No statement"/>
+            <completenessElementaryFlows type="Land use" value="No statement"/>
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="No statement"/>
+            <completenessElementaryFlows type="Renewable material resource consumption" value="No statement"/>
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="No statement"/>
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="No statement"/>
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="No statement"/>
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+        </completeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <common:commissionerAndGoal>
+            <common:referenceToCommissioner type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToCommissioner>
+            <common:intendedApplications xml:lang="en">This data set is for illustratuve purposes only and not reflecting actual production/operation of the product.</common:intendedApplications>
+        </common:commissionerAndGoal>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2018-04-23T12:55:54.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+            <common:referenceToDataSetUseApproval type="contact data set" refObjectId="be34bbb0-b054-11db-abbd-0800200c9a66" version="28.00.000" uri="../contacts/be34bbb0-b054-11db-abbd-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">No official approval by producer or operator</common:shortDescription>
+            </common:referenceToDataSetUseApproval>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2018-04-23T12:55:54.000</common:dateOfLastRevision>
+            <common:dataSetVersion>01.00.000</common:dataSetVersion>
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+            <common:referenceToOwnershipOfDataSet type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToOwnershipOfDataSet>
+            <common:copyright>true</common:copyright>
+            <common:licenseType>Other</common:licenseType>
+            <common:accessRestrictions xml:lang="en">none</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange dataSetInternalID="0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a1ff365a-b063-4993-9ddc-6c68dd45ff81" version="01.00.000" uri="../flows/a1ff365a-b063-4993-9ddc-6c68dd45ff81.xml">
+                <common:shortDescription xml:lang="en">End-of-life injection moulding machine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="1">
+            <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9505-0050c2490048" version="01.00.000" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9505-0050c2490048.xml">
+               <common:shortDescription xml:lang="en">sodium (Emissions to freshwater)</common:shortDescription>
+         </referenceToFlowDataSet>
+         <exchangeDirection>Output</exchangeDirection>
+         <meanAmount>-0.55</meanAmount>
+         <resultingAmount>-0.55</resultingAmount>
+         <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+         <dataSourceType>Mixed primary / secondary</dataSourceType>
+         <dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+        </exchange>
+         <exchange dataSetInternalID="2">
+            <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94e3-0050c2490048" version="01.00.000" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94e3-0050c2490048.xml">
+               <common:shortDescription xml:lang="en">zinc (Emissions to air, unspecified)</common:shortDescription>
+         </referenceToFlowDataSet>
+         <exchangeDirection>Output</exchangeDirection>
+         <meanAmount>-0.00000015</meanAmount>
+         <resultingAmount>-0.00000015</resultingAmount>
+         <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+         <dataSourceType>Mixed primary / secondary</dataSourceType>
+         <dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+        </exchange>
+    </exchanges>
+</processDataSet>

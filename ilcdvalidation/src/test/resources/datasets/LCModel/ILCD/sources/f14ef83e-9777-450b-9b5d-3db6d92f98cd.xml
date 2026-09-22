@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='../../stylesheets/source2html.xsl' ?>
+<sourceDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Source" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Source ../../schemas/ILCD_SourceDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sourceInformation>
+        <dataSetInformation>
+            <common:UUID>f14ef83e-9777-450b-9b5d-3db6d92f98cd</common:UUID>
+            <common:shortName xml:lang="en">Energy_Electricity_Grid_Mix_EF_DE_2011.jpg</common:shortName>
+            <classificationInformation>
+                <common:classification name="ILCD">
+                    <common:class level="0" classId="Images">Images</common:class>
+                </common:classification>
+            </classificationInformation>
+            <sourceCitation>GaBi database</sourceCitation>
+            <publicationType>Undefined</publicationType>
+            <referenceToDigitalFile uri="../external_docs/Energy_Electricity_Grid_Mix_EF_DE_2011.jpg"/>
+        </dataSetInformation>
+    </sourceInformation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2017-07-23T14:29:30.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>30.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+</sourceDataSet>

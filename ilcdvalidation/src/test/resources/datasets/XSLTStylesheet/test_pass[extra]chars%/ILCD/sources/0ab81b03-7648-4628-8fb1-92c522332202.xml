@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/source2html.xsl" type="text/xsl"?>
+<sourceDataSet xmlns="http://lca.jrc.it/ILCD/Source" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://lca.jrc.it/ILCD/Source ../../schemas/ILCD_SourceDataSet.xsd" version="1.1">
+  <sourceInformation>
+    <dataSetInformation>
+      <common:UUID>0ab81b03-7648-4628-8fb1-92c522332202</common:UUID>
+      <common:shortName xml:lang="en">FEVE LCA Method Report</common:shortName>
+      <classificationInformation>
+        <common:classification>
+          <common:class level="0">Publications and communications</common:class>
+        </common:classification>
+      </classificationInformation>
+      <sourceCitation/>
+      <publicationType>Monograph</publicationType>
+      <referenceToDigitalFile uri="../external_docs/LCA Container Glass FEVE Method Report.pdf"/>
+      <referenceToContact refObjectId="a9334d8e-a17a-4f3b-9d55-d313af7ea438" type="contact data set" uri="../contacts/a9334d8e-a17a-4f3b-9d55-d313af7ea438.xml">
+        <common:shortDescription xml:lang="en">FEVE</common:shortDescription>
+      </referenceToContact>
+    </dataSetInformation>
+  </sourceInformation>
+  <administrativeInformation>
+    <dataEntryBy>
+      <common:timeStamp>2010-04-29T18:19:22+01:00</common:timeStamp>
+      <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+        <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+      </common:referenceToDataSetFormat>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dataSetVersion>14.00.000</common:dataSetVersion>
+    </publicationAndOwnership>
+  </administrativeInformation>
+</sourceDataSet>

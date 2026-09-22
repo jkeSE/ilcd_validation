@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/lciamethod2html.xsl" type="text/xsl"?>
+<LCIAMethodDataSet xmlns="http://lca.jrc.it/ILCD/LCIAMethod"
+                   xmlns:common="http://lca.jrc.it/ILCD/Common"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://lca.jrc.it/ILCD/LCIAMethod ../../schemas/ILCD_LCIAMethodDataSet.xsd"
+                   version="1.1">
+   <LCIAMethodInformation>
+      <dataSetInformation>
+         <common:UUID>8b82be1e-c0ce-458f-a55f-113aa51b743a</common:UUID>
+         <common:name xml:lang="en">Super LCIA 2007</common:name>
+         <methodology/>
+         <classificationInformation>
+            <common:classification>
+               <common:class level="0">Endpoint/damage level LCIA methods</common:class>
+            </common:classification>
+         </classificationInformation>
+         <common:generalComment xml:lang="en">LCIA method collection covering all main saveguard subjects human health, environment and resources in an advanced end-point
+                approach.</common:generalComment>
+      </dataSetInformation>
+      <quantitativeReference>
+         <referenceQuantity type="flow property data set"
+            refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66"
+            uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+            <common:shortDescription xml:lang="en">Units of SuperLCIA2007-Ecopoints</common:shortDescription>
+         </referenceQuantity>
+      </quantitativeReference>
+      <time>
+         <referenceYear>2006</referenceYear>
+         <duration>2009</duration>
+      </time>
+      <geography>
+         <interventionLocation>RER</interventionLocation>
+         <geographicalRepresentativenessDescription>Integrated modelling across continental Europe incl. eastern Europe. Not valid if emissions are predominantly take place in cities or rural areas
+                or in a particular country.</geographicalRepresentativenessDescription>
+      </geography>
+      <impactModel>
+         <modelName>Foo</modelName>
+         <modelDescription>Bar</modelDescription>
+      </impactModel>
+   </LCIAMethodInformation>
+   <modellingAndValidation>
+      <validation>
+         <review type="Dependent internal review"/>
+      </validation>
+   </modellingAndValidation>
+   <administrativeInformation>
+      <common:commissionerAndGoal>
+         <common:referenceToCommissioner type="contact data set" refObjectId="d0d5f8bb-9311-49d1-9e30-2f20a6977f4f"
+                                         uri="../contacts/d0d5f8bb-9311-49d1-9e30-2f20a6977f4f.xml">
+            <common:shortDescription xml:lang="en">EPLCA working group</common:shortDescription>
+         </common:referenceToCommissioner>
+         <common:project xml:lang="en">Development of recommended LCIA factors for Europe</common:project>
+         <common:intendedApplications xml:lang="en">Development of officially recommended default LCIA factors for LCA studies submitted to the European Commission.</common:intendedApplications>
+      </common:commissionerAndGoal>
+      <dataGenerator>
+         <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="5bb337b0-9a1a-11da-a72b-0800200c9a62"
+            uri="../contacts/5bb337b0-9a1a-11da-a72b-0800200c9a62.xml">
+            <common:shortDescription xml:lang="en">XY Consulting Ltd.</common:shortDescription>
+         </common:referenceToPersonOrEntityGeneratingTheDataSet>
+      </dataGenerator>
+      <dataEntryBy>
+         <common:timeStamp>2006-02-01T00:00:00-05:00</common:timeStamp>
+         <common:referenceToDataSetFormat type="source data set"
+                                          uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml"
+                                          refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40">
+            <common:shortDescription>ILCD format</common:shortDescription>
+         </common:referenceToDataSetFormat>
+      </dataEntryBy>
+      <publicationAndOwnership>
+         <common:dataSetVersion>00.00.000</common:dataSetVersion>
+         <common:referenceToOwnershipOfDataSet type="contact data set" refObjectId="d0d5f8bb-9311-49d1-9e30-2f20a6977f4f"
+                                               uri="../contacts/d0d5f8bb-9311-49d1-9e30-2f20a6977f4f.xml">
+            <common:shortDescription xml:lang="en">EPLCA working group</common:shortDescription>
+         </common:referenceToOwnershipOfDataSet>
+         <common:copyright>true</common:copyright>
+      </publicationAndOwnership>
+   </administrativeInformation>
+   <characterisationFactors>
+      <factor>
+         <referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97dc-0050c2490048" >
+            <common:shortDescription xml:lang="en">String</common:shortDescription>
+         </referenceToFlowDataSet>
+         <exchangeDirection>Input</exchangeDirection>
+         <meanValue>3.1415</meanValue>
+         <minimumValue>3.1415</minimumValue>
+         <maximumValue>3.1415</maximumValue>
+         <uncertaintyDistributionType>undefined</uncertaintyDistributionType>
+         <relativeStandardDeviation95In>2</relativeStandardDeviation95In>
+         <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+         <referencesToDataSource>
+            <referenceToDataSource type="source data set" refObjectId="10466572-0cfd-428e-8b10-ae74255e6e83">
+               <common:subReference>String</common:subReference>
+               <common:shortDescription xml:lang="en">String</common:shortDescription>
+            </referenceToDataSource>
+         </referencesToDataSource>
+         <generalComment xml:lang="en">String</generalComment>
+      </factor>
+   </characterisationFactors>
+</LCIAMethodDataSet>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='../../stylesheets/source2html.xsl' ?>
+<sourceDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Source" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Source ../../schemas/ILCD_SourceDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sourceInformation>
+        <dataSetInformation>
+            <common:UUID>6e2d42b4-545d-4450-b5c4-0963dc5a2e59</common:UUID>
+            <common:shortName xml:lang="en">Informative Inventory Report</common:shortName>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Publications and communications</common:class>
+                </common:classification>
+            </classificationInformation>
+            <sourceCitation>Interregional Environment Unit (CELINE - IRCEL), Informative Inventory Report, Brussels, Belgium, 2010</sourceCitation>
+            <publicationType>Other unpublished and grey literature</publicationType>
+        </dataSetInformation>
+    </sourceInformation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2011-10-31T23:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>28.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+</sourceDataSet>

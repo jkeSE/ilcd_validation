@@ -1,0 +1,1430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='../../stylesheets/lciamethod2html.xsl'?>
+<LCIAMethodDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/LCIAMethod ../../schemas/ILCD_LCIAMethodDataSet.xsd">
+    <LCIAMethodInformation>
+        <dataSetInformation>
+            <common:UUID>9e456c6b-2cb3-45cd-91ec-40681ab2b2e9</common:UUID>
+            <common:name xml:lang="en">ILCD2011; Resource depletion - water; midpoint; freshwater scarcity; Swiss Ecoscarcity2006</common:name>
+            <methodology>ILCD2011</methodology>
+            <methodology>Swiss Ecoscarcity (water)</methodology>
+            <impactCategory>Biotic resource depletion</impactCategory>
+            <impactIndicator>Freshwater scarcity: Scarcity-adjusted amount of water used.</impactIndicator>
+            <common:generalComment xml:lang="en">Model for water consumption.</common:generalComment>
+            <referenceToExternalDocumentation type="source data set" refObjectId="9d5dd267-442d-4be9-b3d7-9677ad0502ce" uri="../sources/9d5dd267-442d-4be9-b3d7-9677ad0502ce.xml">
+                <common:shortDescription xml:lang="en">Frischknecht et al. (2008)</common:shortDescription>
+            </referenceToExternalDocumentation>
+            <referenceToExternalDocumentation type="source data set" refObjectId="0ae10a13-3fc6-4542-9113-1f8171fcd2a5" uri="../sources/0ae10a13-3fc6-4542-9113-1f8171fcd2a5.xml">
+                <common:shortDescription xml:lang="en">Frischknecht et al. (2009)</common:shortDescription>
+            </referenceToExternalDocumentation>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceQuantity type="flow property data set" refObjectId="86597264-2d7c-454a-abb6-f5c5106ae888" uri="../flowproperties/86597264-2d7c-454a-abb6-f5c5106ae888.xml">
+                <common:shortDescription xml:lang="en">Scarcity adjusted mass of water used</common:shortDescription>
+            </referenceQuantity>
+        </quantitativeReference>
+        <time>
+            <referenceYear xml:lang="en">time independent</referenceYear>
+            <duration xml:lang="en">indefinite</duration>
+        </time>
+        <geography>
+            <interventionLocation>GLO</interventionLocation>
+            <impactLocation>GLO</impactLocation>
+            <geographicalRepresentativenessDescription xml:lang="en">Applicable to specified regions (i.e. countries). Ratio between critical and actual flow is provided for many countries.</geographicalRepresentativenessDescription>
+        </geography>
+        <impactModel>
+            <modelName>None</modelName>
+            <modelDescription xml:lang="en">The model relates water use to local scarcity of water.</modelDescription>
+            <referenceToModelSource type="source data set" refObjectId="9d5dd267-442d-4be9-b3d7-9677ad0502ce" uri="../sources/9d5dd267-442d-4be9-b3d7-9677ad0502ce.xml">
+                <common:shortDescription xml:lang="en">Frischknecht et al. (2008)</common:shortDescription>
+            </referenceToModelSource>
+            <referenceToModelSource type="source data set" refObjectId="0ae10a13-3fc6-4542-9113-1f8171fcd2a5" uri="../sources/0ae10a13-3fc6-4542-9113-1f8171fcd2a5.xml">
+                <common:shortDescription xml:lang="en">Frischknecht et al. (2009)</common:shortDescription>
+            </referenceToModelSource>
+            <consideredMechanisms xml:lang="en">Ratio between actual and critical flow is considered to be representative of the water scarcity and thus the seriousness of water consumption.</consideredMechanisms>
+            <referenceToMethodologyFlowChart type="source data set" refObjectId="0f6377fc-6b7c-4412-863d-700ca44cc130" uri="../sources/0f6377fc-6b7c-4412-863d-700ca44cc130.xml">
+                <common:shortDescription xml:lang="en">Resource_dep_figure</common:shortDescription>
+            </referenceToMethodologyFlowChart>
+        </impactModel>
+    </LCIAMethodInformation>
+    <modellingAndValidation>
+        <useAdviceForDataSet xml:lang="en">Data per country may not represent water
+scarcity in all regions of large countries, more detailed regional data is available from
+http://www.esu-services.ch/projects/ubp06/google-layer/. Applicable on total water use or
+consumptive water use. Factors are available in EcoSpold format too.</useAdviceForDataSet>
+        <LCIAMethodNormalisationAndWeighting>
+            <typeOfDataSet>Damage indicator</typeOfDataSet>
+            <LCIAMethodPrinciple>Resource dissipation</LCIAMethodPrinciple>
+            <deviationsFromLCIAMethodPrinciple xml:lang="en">None</deviationsFromLCIAMethodPrinciple>
+            <normalisation>false</normalisation>
+            <weighting>false</weighting>
+        </LCIAMethodNormalisationAndWeighting>
+        <dataSources>
+            <referenceToDataSource type="source data set" refObjectId="0ae10a13-3fc6-4542-9113-1f8171fcd2a5" uri="../sources/0ae10a13-3fc6-4542-9113-1f8171fcd2a5.xml">
+                <common:shortDescription xml:lang="en">Frischknecht et al. (2009)</common:shortDescription>
+            </referenceToDataSource>
+        </dataSources>
+        <completeness>
+            <inventoryItems>7</inventoryItems>
+        </completeness>
+        <validation>
+            <review type="Independent review panel">
+                <scope name="Model for Damage">
+                    <method name="Cross-check with other LCIA method(ology)"/>
+                </scope>
+                <scope name="Characterisation factors">
+                    <method name="Cross-check with other LCIA method(ology)"/>
+                </scope>
+                <scope name="Application of model">
+                    <method name="Cross-check with other LCIA method(ology)"/>
+                </scope>
+                <scope name="Documentation">
+                    <method name="Cross-check with other LCIA method(ology)"/>
+                </scope>
+                <common:reviewDetails xml:lang="en">Model documentation and results available. Most appropriate among existing methods, though including a rudimentary model. Suggested in SETAC-UNEP results. Seen as promising concept to assess water use and differentiate situations where water extraction causes different levels of damages.</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="82ff003a-2209-494a-a9a8-45b8fd425d01" uri="../contacts/82ff003a-2209-494a-a9a8-45b8fd425d01.xml">
+                    <common:shortDescription xml:lang="en">ReCiPe team</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+                <common:referenceToCompleteReviewReport type="source data set" refObjectId="2d934f14-e39e-4ef2-aa00-5cb53e04ddc2" uri="../sources/2d934f14-e39e-4ef2-aa00-5cb53e04ddc2.xml">
+                    <common:shortDescription xml:lang="en">Review report on recommended LCIA methods</common:shortDescription>
+                </common:referenceToCompleteReviewReport>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <common:commissionerAndGoal>
+            <common:referenceToCommissioner type="contact data set" refObjectId="32944ef1-abd0-448d-9574-24b5160934a4" uri="../contacts/32944ef1-abd0-448d-9574-24b5160934a4.xml">
+                <common:shortDescription xml:lang="en">Federal Office for the Environment (FOEN)</common:shortDescription>
+            </common:referenceToCommissioner>
+            <common:project xml:lang="en">LCIA method original development  within the Ecological Scarcity Method 2006 . Documentation as ILCD formatted data set, mapping to the ILCD elementary flows, and additional quality checks by the EC’s JRC-IES and with contractual support projects, partly financed under  several Administrative Arrangements on the European Platform on LCA   - EPLCA' between JRC and DG ENV, (070402/2006/443456/G4, 070307/2007/474521/G4, 070307/2008/513489/G4).</common:project>
+            <common:intendedApplications xml:lang="en">Swiss product policy and international use in LCA.</common:intendedApplications>
+        </common:commissionerAndGoal>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="af544651-c748-4b2b-80cf-6afc40026843" uri="../contacts/af544651-c748-4b2b-80cf-6afc40026843.xml">
+                <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="d0d5f8bb-9311-49d1-9e30-2f20a6977f4f" uri="../contacts/d0d5f8bb-9311-49d1-9e30-2f20a6977f4f.xml">
+                <common:shortDescription xml:lang="en">European Platform on Life Cycle Assessment (EPLCA) project team at: European Commission, Joint Research Centre (DG JRC), Institute for Environment and Sustainability (IES)</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2012-01-09T15:25:22.951+01:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToConvertedOriginalDataSetFrom type="source data set" refObjectId="0ae10a13-3fc6-4542-9113-1f8171fcd2a5" uri="../sources/0ae10a13-3fc6-4542-9113-1f8171fcd2a5.xml">
+                <common:shortDescription xml:lang="en">Frischknecht et al. (2009)</common:shortDescription>
+            </common:referenceToConvertedOriginalDataSetFrom>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="cb4152a1-19ed-4e91-a6f7-bce7f6e41710" uri="../contacts/cb4152a1-19ed-4e91-a6f7-bce7f6e41710.xml">
+                <common:shortDescription xml:lang="en">Alexis Laurent</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+            <recommendationBy>
+                <referenceToEntity type="contact data set" refObjectId="97f476bd-415a-4463-955a-019202b70ae4" uri="../contacts/97f476bd-415a-4463-955a-019202b70ae4.xml">
+                    <common:shortDescription xml:lang="en">European Commission - Joint Research Centre</common:shortDescription>
+                </referenceToEntity>
+                <level>Level III</level>
+                <meaning xml:lang="en">Recommended, but to be applied with caution.For more information see: ILCD Handbook on recommended LCIA methods for Europe.</meaning>
+            </recommendationBy>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2009-12-31T00:00:00</common:dateOfLastRevision>
+            <common:dataSetVersion>01.00.000</common:dataSetVersion>
+            <common:permanentDataSetURI>http://lca.jrc.ec.europa.eu/lcainfohub/datasets/elcd/lciamethods/9e456c6b-2cb3-45cd-91ec-40681ab2b2e9.xml</common:permanentDataSetURI>
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+            <common:referenceToOwnershipOfDataSet type="contact data set" refObjectId="40e9ad1a-0bec-4612-af2d-f085d080f6bc" uri="../contacts/40e9ad1a-0bec-4612-af2d-f085d080f6bc.xml">
+                <common:shortDescription xml:lang="en">Öbu - Netzwerk für nachhaltiges Wirtschaften</common:shortDescription>
+            </common:referenceToOwnershipOfDataSet>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">The data set can be used free of charge by anybody to perform LCA studies, to distribute it to third parties, to convert it to other formats, to develop own data sets etc. as long as the copyright and license conditions for the ELCD data sets and the ILCD format are met that can be accessed via http://lca.jrc.ec.europa.eu and are part of the ELCD database distribution package. Please note e.g. that reference must be given to the 'Owner of data set' (who may have additional copyright and license requirements on the particular data set that are to be met) and to the 'ELCD database' plus version number, when using the data set or parts thereof. Please note also that any modifications/omissions of the data set results in invalidity of any existing 'Official recommendation of data set by governmental body', that the impression must be avoided that this would still be an original ELCD data set, and that the content of further fields may have to be adjusted. For details see the aforementioned copyright and license conditions as well as those the &quot;Owner of data set&quot; may have put into force.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <characterisationFactors>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.049</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.027</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.42</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.016</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.2</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.21</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.023</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.2</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.31</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.073</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>8.8E-4</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.022</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.23</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JP</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.21</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.12</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.42</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MX</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.17</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.087</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.0065</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.0057</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.26</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.16</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.32</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.017</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.048</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.18</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.065</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
+                <common:shortDescription xml:lang="en">freshwater (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>US</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.16</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="a35d84d7-1088-4781-954b-2a36a249a50f" uri="../flows/a35d84d7-1088-4781-954b-2a36a249a50f.xml">
+                <common:shortDescription xml:lang="en">freshwater, low scarcity (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.05</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="c4498032-5c69-487a-897f-6ef4dc879a0b" uri="../flows/c4498032-5c69-487a-897f-6ef4dc879a0b.xml">
+                <common:shortDescription xml:lang="en">freshwater, moderate scarcity (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.15</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="ccd01e13-0f92-43ef-88b1-c95392b22abb" uri="../flows/ccd01e13-0f92-43ef-88b1-c95392b22abb.xml">
+                <common:shortDescription xml:lang="en">freshwater, medium scarcity (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.3</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="37702761-15ed-4cff-a726-7c752f867a86" uri="../flows/37702761-15ed-4cff-a726-7c752f867a86.xml">
+                <common:shortDescription xml:lang="en">freshwater, high scarcity (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.5</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="bc92d2e1-b258-406d-a3a7-5bf9637f59ea" uri="../flows/bc92d2e1-b258-406d-a3a7-5bf9637f59ea.xml">
+                <common:shortDescription xml:lang="en">freshwater, very high scarcity (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.8</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fc3f76ab-afb1-4f23-994e-250533b62c9e" uri="../flows/fc3f76ab-afb1-4f23-994e-250533b62c9e.xml">
+                <common:shortDescription xml:lang="en">freshwater, extreme scarcity (Volume, m3, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>1.5</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="ceaf2f45-5b08-4ba5-b669-c783e1940c82" uri="../flows/ceaf2f45-5b08-4ba5-b669-c783e1940c82.xml">
+                <common:shortDescription xml:lang="en">freshwater, OECD average scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.049</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.027</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.42</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.016</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.2</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.21</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.023</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.2</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.31</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.073</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>8.8E-4</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.022</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.23</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JP</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.21</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.12</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.42</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MX</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.17</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.087</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.0065</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.0057</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.26</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.16</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.32</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.017</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.048</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.18</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.065</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">ground water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>US</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.16</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="46e526b4-9ee7-4681-957c-f910a471df19" uri="../flows/46e526b4-9ee7-4681-957c-f910a471df19.xml">
+                <common:shortDescription xml:lang="en">ground water, low scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.05</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="d99552c8-deed-4cf5-aa59-13c20290effe" uri="../flows/d99552c8-deed-4cf5-aa59-13c20290effe.xml">
+                <common:shortDescription xml:lang="en">ground water, moderate scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.15</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="68749070-84fa-418c-b197-564476953df6" uri="../flows/68749070-84fa-418c-b197-564476953df6.xml">
+                <common:shortDescription xml:lang="en">ground water, medium scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.3</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="3ade2877-ae91-4107-bbf0-cb9291ebbe10" uri="../flows/3ade2877-ae91-4107-bbf0-cb9291ebbe10.xml">
+                <common:shortDescription xml:lang="en">ground water high scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.5</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="912b9d75-efb7-4003-868a-cece3831c5b3" uri="../flows/912b9d75-efb7-4003-868a-cece3831c5b3.xml">
+                <common:shortDescription xml:lang="en">ground water, very high scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.8</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1419f26f-689b-4c59-acff-b62041ac3c2e" uri="../flows/1419f26f-689b-4c59-acff-b62041ac3c2e.xml">
+                <common:shortDescription xml:lang="en">ground water, extreme scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>1.5</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="e142f6f0-b33e-4308-b279-93be78511559" uri="../flows/e142f6f0-b33e-4308-b279-93be78511559.xml">
+                <common:shortDescription xml:lang="en">ground water, OECD average scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.049</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.027</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.42</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.016</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.2</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.21</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.023</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.2</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.31</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.073</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>8.8E-4</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.022</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.23</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JP</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.21</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.12</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.42</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MX</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.17</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.087</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.0065</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.0057</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.26</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.16</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.32</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.017</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.048</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.18</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.065</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5a-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">lake water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>US</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.16</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="c56bf55f-69d6-4bd5-b18e-f80e2d8b0939" uri="../flows/c56bf55f-69d6-4bd5-b18e-f80e2d8b0939.xml">
+                <common:shortDescription xml:lang="en">lake water, low scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.05</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="e3eba595-a906-4498-ae55-3032e263956c" uri="../flows/e3eba595-a906-4498-ae55-3032e263956c.xml">
+                <common:shortDescription xml:lang="en">lake water, moderate scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.15</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="c20afd34-dcb4-4520-8b4f-357776c29e68" uri="../flows/c20afd34-dcb4-4520-8b4f-357776c29e68.xml">
+                <common:shortDescription xml:lang="en">lake water, medium scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.3</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="fcddd887-3042-4dfa-95b2-7ffbc440a72d" uri="../flows/fcddd887-3042-4dfa-95b2-7ffbc440a72d.xml">
+                <common:shortDescription xml:lang="en">lake water,  high scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.5</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="4747aae9-5df6-4f0b-953e-69651c5556b2" uri="../flows/4747aae9-5df6-4f0b-953e-69651c5556b2.xml">
+                <common:shortDescription xml:lang="en">lake water, very high scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.8</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="8e0effcb-0b79-4e31-a822-127dff63f1ff" uri="../flows/8e0effcb-0b79-4e31-a822-127dff63f1ff.xml">
+                <common:shortDescription xml:lang="en">lake water, extreme scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>1.5</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="12d520c9-3272-4b93-b7ac-21b5da30c716" uri="../flows/12d520c9-3272-4b93-b7ac-21b5da30c716.xml">
+                <common:shortDescription xml:lang="en">lake water, OECD average scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.049</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.027</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.42</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.016</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.2</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.21</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.023</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.2</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.31</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.073</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>8.8E-4</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.022</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.23</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JP</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.21</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.12</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.42</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MX</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.17</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.087</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.0065</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.0057</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.26</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.16</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.32</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.017</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.048</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.18</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.065</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">river water (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>US</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.16</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="33b3d9a9-9950-4d6d-aed7-9eb31f08f759" uri="../flows/33b3d9a9-9950-4d6d-aed7-9eb31f08f759.xml">
+                <common:shortDescription xml:lang="en">river water, low scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.05</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="78b3f677-9dfa-430c-b6c2-f14bb1c42020" uri="../flows/78b3f677-9dfa-430c-b6c2-f14bb1c42020.xml">
+                <common:shortDescription xml:lang="en">river water,  moderate scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.15</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="929eed14-a304-41e0-bcfd-4885070ef7d5" uri="../flows/929eed14-a304-41e0-bcfd-4885070ef7d5.xml">
+                <common:shortDescription xml:lang="en">river water,  medium scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.3</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="2961cf29-d2ba-43a2-8fc5-e8c693f12a83" uri="../flows/2961cf29-d2ba-43a2-8fc5-e8c693f12a83.xml">
+                <common:shortDescription xml:lang="en">river water,  high scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.5</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="21f316cd-6888-4c3a-9ad2-5e8051786109" uri="../flows/21f316cd-6888-4c3a-9ad2-5e8051786109.xml">
+                <common:shortDescription xml:lang="en">river water,  very high scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.8</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="aca683fa-d295-418f-b8bb-17babfa5cb6d" uri="../flows/aca683fa-d295-418f-b8bb-17babfa5cb6d.xml">
+                <common:shortDescription xml:lang="en">river water,  extreme scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>1.5</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+        <factor>
+            <referenceToFlowDataSet type="flow data set" refObjectId="c5491df7-f2e4-4abd-8909-e1e3d7b2716c" uri="../flows/c5491df7-f2e4-4abd-8909-e1e3d7b2716c.xml">
+                <common:shortDescription xml:lang="en">river water,  OECD average scarcity (Mass, kg, Renewable material resources from water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanValue>0.1</meanValue>
+            <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+        </factor>
+    </characterisationFactors>
+</LCIAMethodDataSet>

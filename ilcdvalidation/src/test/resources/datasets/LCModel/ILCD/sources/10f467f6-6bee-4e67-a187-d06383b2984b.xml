@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='../../stylesheets/source2html.xsl' ?>
+<sourceDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Source" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Source ../../schemas/ILCD_SourceDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sourceInformation>
+        <dataSetInformation>
+            <common:UUID>10f467f6-6bee-4e67-a187-d06383b2984b</common:UUID>
+            <common:shortName xml:lang="en">UNEP SETAC Life Cycle Initiative</common:shortName>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Compliance systems</common:class>
+                </common:classification>
+            </classificationInformation>
+            <sourceCitation>UNEP SETAC Life Cycle Initiative, Global Guidance Principles for Life Cycle Assessment Databases - A Basis for Greener Processes and Products, Paris, 2011</sourceCitation>
+            <publicationType>Monograph</publicationType>
+            <referenceToContact type="contact data set" refObjectId="c390ed50-1572-44fd-acb5-c2f984f749e6" version="28.00.000" uri="../contacts/c390ed50-1572-44fd-acb5-c2f984f749e6.xml">
+                <common:shortDescription xml:lang="en">UNEP SETAC Life Cycle Initiative</common:shortDescription>
+            </referenceToContact>
+        </dataSetInformation>
+    </sourceInformation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2011-10-31T23:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>28.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+</sourceDataSet>

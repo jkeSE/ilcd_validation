@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd" locations="../ILCDLocations.xml" version="1.1">
+  <processInformation>
+    <dataSetInformation>
+      <common:UUID>0cbf76cc-0192-4617-acd3-0fdb3cecf6c7</common:UUID>
+      <name>
+        <baseName xml:lang="en">Process steam from natural gas</baseName>
+        <treatmentStandardsRoutes xml:lang="en">heat plant</treatmentStandardsRoutes>
+        <mixAndLocationTypes xml:lang="en">consumption mix, at plant</mixAndLocationTypes>
+        <functionalUnitFlowProperties xml:lang="en">MJ</functionalUnitFlowProperties>
+      </name>
+      <classificationInformation>
+        <common:classification>
+          <common:class level="0">Energy carriers and technologies</common:class>
+          <common:class level="1">Heat and steam</common:class>
+        </common:classification>
+      </classificationInformation>
+      <common:generalComment xml:lang="en">Good overall data quality. Energy carrier mix information based on official statistical information including import / export. A detailed
+        heat plant model was used, which combine measured emissions plus calculated values for not measured emissions of e.g. organics or heavy metals. Energy carrier extraction
+        and processing data is of sufficient to good (e.g. refinery) data quality. Inventory is partly based on primary industry data, partly on secondary literature
+        data.</common:generalComment>
+    </dataSetInformation>
+    <quantitativeReference type="Reference flow(s)">
+      <referenceToReferenceFlow>60</referenceToReferenceFlow>
+    </quantitativeReference>
+    <time>
+      <common:referenceYear>2002</common:referenceYear>
+      <common:dataSetValidUntil>2010</common:dataSetValidUntil>
+      <common:timeRepresentativenessDescription xml:lang="en">Annual average</common:timeRepresentativenessDescription>
+    </time>
+    <geography>
+      <locationOfOperationSupplyOrProduction location="SI">
+        <descriptionOfRestrictions xml:lang="en">The data set represents the country / region specific situation, focusing on the main technologies, and the region specific
+          characteristics.</descriptionOfRestrictions>
+      </locationOfOperationSupplyOrProduction>
+    </geography>
+    <technology>
+      <technologyDescriptionAndIncludedProcesses xml:lang="en">The process steam is produced in a natural gas specific heat plant. The Slovenian specific fuel supply (share of
+        resources used, by import and / or domestic supply) including the Slovenian specific energy carrier properties (e.g. element and energy contents) are accounted for.
+        Furthermore Slovenian specific technology standards of heat plants regarding efficiency, firing technology, flue-gas desulphurisation, NOx removal and dedusting are
+        considered. The Slovenian emission factors can be found in the table below in the corresponding column. The data set considers the whole supply chain of the fuels from
+        exploration over extraction and preparation to transport of fuels to the heat plants. Furthermore the data set comprises the infrastructure as well as end-of-life of the
+        plant.   The background system is addressed as follows:  Transports: All relevant and known transport processes used are included. Overseas transports including rail and
+        truck transport to and from major ports for imported bulk resources are included. Furthermore all relevant and known pipeline and / or tanker transport of gases and oil
+        imports are included.  Energy carriers: Coal, crude oil, natural gas and uranium are modelled according to the specific import situation.  Refinery products: Diesel,
+        gasoline, technical gases, fuel oils, basic oils and residues such as bitumen are modelled via a country-specific, refinery parameterized model. The refinery model
+        represents the current national standard in refinery techniques (e.g. emission level, internal energy consumption,...) as well as the individual country-specific product
+        output spectrum, which can be quite different from country to country. Hence the refinery products used show the individual country-specific use of resources. The supply of
+        crude oil is modelled, again, according to the country-specific crude oil situation with the respective properties of the
+        resources.</technologyDescriptionAndIncludedProcesses>
+      <technologicalApplicability xml:lang="en">Process steam (MJ) at heat plant for final consumers.</technologicalApplicability>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="13191bd2-5fba-11db-b0de-0800200c9a66" type="source data set"
+        uri="../sources/13191bd2-5fba-11db-b0de-0800200c9a66.xml">
+        <common:shortDescription xml:lang="en">PE_LBP-GaBi_Energy_Emissionfactors_SI_13191bd2-5fba-11db-b0de-0800200c9a66.JPG</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="151451e5-4418-11dd-ae16-0800200c9a66" type="source data set"
+        uri="../sources/151451e5-4418-11dd-ae16-0800200c9a66.xml">
+        <common:shortDescription xml:lang="en">PE_LBP-GaBi_Energy_Steam_from_Natural_Gas_LCA_151451e5-4418-11dd-ae16-0800200c9a66.JPG</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+    </technology>
+  </processInformation>
+  <modellingAndValidation>
+    <LCIMethodAndAllocation>
+      <typeOfDataSet>LCI result</typeOfDataSet>
+      <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+      <deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+      <LCIMethodApproaches>Allocation - net calorific value</LCIMethodApproaches>
+      <deviationsFromLCIMethodApproaches>For the combined crude oil, natural gas and natural gas liquids production allocation by net calorific value is
+        applied.</deviationsFromLCIMethodApproaches>
+      <modellingConstants xml:lang="en">All data used in the calculation of the LCI results refer to net calorific value. For the transport of energy carriers average transport
+        processes with specific parameter settings e.g. transport distances and route (ship, pipeline, rail, road) are used.</modellingConstants>
+      <deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+    </LCIMethodAndAllocation>
+    <dataSourcesTreatmentAndRepresentativeness>
+      <dataCutOffAndCompletenessPrinciples xml:lang="en">Cut-off rules for each unit process: Coverage of at least 95 % of mass and energy of the input and output flows, and 98 %
+        of their environmental relevance (according to expert judgement).</dataCutOffAndCompletenessPrinciples>
+      <deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">The coverage for the exploration data (crude oil, natural gas, natural gas liquids) is only 90% of mass and
+        energy and 95% of the environmental relevance (expert judgement).</deviationsFromCutOffAndCompletenessPrinciples>
+      <dataSelectionAndCombinationPrinciples xml:lang="en">The data sources for the complete product system are sufficiently consistent: The key emissions e.g. sulphur dioxide,
+        nitrogen oxide, etc., of the heat plants are based on measured operating data taken from national statistics. All other emissions from the heat plants are based on
+        literature data and / or calculated via energy carrier composition in combination with (literature-based) combustion models. Detailed heat plant models were used, which
+        combine measured emissions plus calculated values for not measured emissions of e.g. organics or heavy metals. Infrastructure data are from literature. The data on the
+        energy carrier supply chain is based on statistics with country / region-specific transport distances and energy carrier composition, as well as industry and literature
+        data on the inventory of exploration and extraction. Refinery data are also based on statistical data and measurements of major refineries as well as literature data. LCI
+        modelling is fully consistent.</dataSelectionAndCombinationPrinciples>
+      <deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+      <dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Energy carrier specific heat plants are modelled according to national combustion technology mix. Data measured at
+        representative heat plants and published have been used to represent the country / region mix of heat plant technologies.</dataTreatmentAndExtrapolationsPrinciples>
+      <deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+      <percentageSupplyOrProductionCovered>95.0</percentageSupplyOrProductionCovered>
+      <useAdviceForDataSet xml:lang="en">The data set can be used by customers (e.g. industry and SME), which use process steam from energy carrier specific heat plants. The data
+        set is calculated with an efficiency of 90% as an default value. If the exact efficiency is known, the data set can be scaled linearly according to the efficiency. In
+        general, typical efficiency ranges are 80%-95%. The data set is not to be used as district heating LCI result.</useAdviceForDataSet>
+    </dataSourcesTreatmentAndRepresentativeness>
+    <completeness>
+      <completenessProductModel>All relevant flows quantified</completenessProductModel>
+    </completeness>
+    <validation>
+      <review type="Dependent internal review">
+        <common:scope name="Raw data">
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Expert judgement"/>
+        </common:scope>
+        <common:scope name="Unit process(es), black box">
+          <common:method name="Energy balance"/>
+          <common:method name="Element balance"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCI results or Partly terminated system">
+          <common:method name="Energy balance"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCIA results">
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+        </common:scope>
+        <common:scope name="Documentation">
+          <common:method name="Expert judgement"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="Life cycle inventory methods">
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation,
+          representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.; Documentation: The review of the documentation was performed by Ecobilan
+          and is in compliance with ISO 14040 and 14044. The data set documentation is correct in view of the appropriateness of the information provided. It includes all relevant
+          information in view of data quality and scope of application of the respective LCI result.</common:reviewDetails>
+      </review>
+    </validation>
+  </modellingAndValidation>
+  <administrativeInformation>
+    <dataEntryBy>
+      <common:timeStamp>2012-01-20T10:26:17+01:00</common:timeStamp>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dataSetVersion>03.00.000</common:dataSetVersion>
+      <common:accessRestrictions xml:lang="en">The data set can be used free of charge by anybody to perform LCA studies, to distribute it to third parties, to convert it to other
+        formats, to develop own data sets etc. as long as the copyright and license conditions for the ELCD data sets and the ILCD format are met that can be accessed via
+        http://lca.jrc.ec.europa.eu. Please note e.g. that reference must be given to the 'Owner of data set' and to the 'ELCD database' plus version number, when using the data
+        set or parts thereof. Please note also, that any modifications/omissions of the data set results in invalidity of any existing 'Official approval of data set by
+        producer/operator', that the impression must be avoided that this would still be a complete ELCD data set, and that the content of further fields has to be adjusted. For
+        details see the aforementioned copyright and license conditions.</common:accessRestrictions>
+    </publicationAndOwnership>
+  </administrativeInformation>
+</processDataSet>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='../../stylesheets/source2html.xsl' ?>
+<sourceDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Source" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Source ../../schemas/ILCD_SourceDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sourceInformation>
+        <dataSetInformation>
+            <common:UUID>f17e7a9d-7c7e-42cf-807e-c7282f661eeb</common:UUID>
+            <common:shortName xml:lang="en">LDPE injection moulding parts model</common:shortName>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Publications and communications</common:class>
+                </common:classification>
+            </classificationInformation>
+            <sourceCitation>maki Consulting GmbH: Example report - LDPE injection moulding parts model, Paris, France, 2017. http://www.maki-consulting.com</sourceCitation>
+            <publicationType>Other unpublished and grey literature</publicationType>
+        </dataSetInformation>
+    </sourceInformation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2017-07-21T00:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>01.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+</sourceDataSet>

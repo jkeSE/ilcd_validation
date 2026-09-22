@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type='text/xsl' href='../../stylesheets/source2html.xsl' ?>
+<sourceDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Source" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Source ../../schemas/ILCD_SourceDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sourceInformation>
+        <dataSetInformation>
+            <common:UUID>57a2608f-18fc-454f-998a-1657376a4322</common:UUID>
+            <common:shortName xml:lang="en">GaBi Land Use Change Model Documentation</common:shortName>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Publications and communications</common:class>
+                </common:classification>
+            </classificationInformation>
+            <sourceCitation>thinkstep AG, 2013, Leinfelden-Echterdingen</sourceCitation>
+            <publicationType>Software or database</publicationType>
+            <sourceDescriptionOrComment xml:lang="en">http://www.gabi-software.com/fileadmin/gabi/Modelling_Principles/GaBi_LUC_Modelling_Documentation.pdf</sourceDescriptionOrComment>
+            <referenceToContact type="contact data set" refObjectId="623edf96-39d1-4e6f-9892-674c7228546b" version="28.00.000" uri="../contacts/623edf96-39d1-4e6f-9892-674c7228546b.xml">
+                <common:shortDescription xml:lang="en">thinkstep</common:shortDescription>
+            </referenceToContact>
+        </dataSetInformation>
+    </sourceInformation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2015-08-01T00:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>28.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+</sourceDataSet>

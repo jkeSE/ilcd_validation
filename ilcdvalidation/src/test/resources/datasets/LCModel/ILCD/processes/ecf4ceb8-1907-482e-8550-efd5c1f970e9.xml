@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" version="1.1" locations="../ILCDLocations.xml" metaDataOnly="false" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>ecf4ceb8-1907-482e-8550-efd5c1f970e9</common:UUID>
+            <name>
+                <baseName xml:lang="en">Plastic injection moulding part (unspecific) - sample</baseName>
+                <mixAndLocationTypes xml:lang="en">single route, at plant</mixAndLocationTypes>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Systems</common:class>
+                    <common:class level="1">Unspecific parts</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The data set is purely illustrative in support of the eILCD format extension and does not reflect any real product.</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>5</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time>
+            <common:referenceYear>2013</common:referenceYear>
+            <common:dataSetValidUntil>2016</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">annual average</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="DE">
+                <descriptionOfRestrictions xml:lang="en">The data set represents the country / region specific situation, focusing on the main technologies, the region specific characteristics and / or import statistics.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">In the injection mould process, plastics are processed as granules, as powder and as profile strings. In general, thermoplasts, duroplasts, and elastomers can be processed. It is not known how many millions of tons of plastics are converted annually into prefabricated parts in the injection mould process. The injection moulding process takes place in the following sequence:   A revolving screw takes granules out of a mass funnel and moves them through its volutions to its tip. The tool is closed, the injection unit moves against the feed bush, the screw presses like a piston the plastified compound into the tool.   The cooled injection moulded part falls out of the opened tool, the screw sends new compound its tip, the injection unit lifts away from the jet. The cycle is completed. The dataset is made for plastic parts where one sprue system is used for one product.</technologyDescriptionAndIncludedProcesses>
+            <technologicalApplicability xml:lang="en">Provision of a standard technical product according to the applied technology.</technologicalApplicability>
+        </technology>
+        <mathematicalRelations>
+            <variableParameter name="CW">
+                <formula>78.2 * weight * 0.005</formula>
+                <meanValue>0.441</meanValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[kg] Cooling water losses</comment>
+            </variableParameter>
+            <variableParameter name="electricity">
+                <formula>4.305 * weight + 0.3372</formula>
+                <meanValue>6.6422</meanValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[MJ] Power per kg part</comment>
+            </variableParameter>
+            <variableParameter name="material">
+                <formula>(weight + waste)</formula>
+                <meanValue>1.02</meanValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[kg] Material per kg part</comment>
+            </variableParameter>
+            <variableParameter name="waste">
+                <formula>0.02 * weight</formula>
+                <meanValue>0.02</meanValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[kg] plastics waste</comment>
+            </variableParameter>
+            <variableParameter name="weight">
+                <meanValue>1.0</meanValue>
+                <minimumValue>0.2</minimumValue>
+                <maximumValue>2.0</maximumValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[kg/part] component weight, default 0,2 kg - 1,8 kg; Do not use outside this range</comment>
+            </variableParameter>
+        </mathematicalRelations>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, single operation</typeOfDataSet>
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+            <deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+            <LCIMethodApproaches>Not applicable</LCIMethodApproaches>
+            <deviationsFromLCIMethodApproaches xml:lang="en">None</deviationsFromLCIMethodApproaches>
+            <modellingConstants xml:lang="en">All data used in the calculation of the LCI results refer to net calorific value.</modellingConstants>
+            <deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="f2b512cd-43b2-4260-9882-eebc06731274" version="28.00.000" uri="../sources/f2b512cd-43b2-4260-9882-eebc06731274.xml">
+                <common:shortDescription xml:lang="en">GaBi Modelling Principles</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="2f4e6329-f31d-44dc-8933-f4e6608590f5" version="28.00.000" uri="../sources/2f4e6329-f31d-44dc-8933-f4e6608590f5.xml">
+                <common:shortDescription xml:lang="en">GaBi Water Modelling Principles</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="69cb87e8-2532-455d-b7d3-18eced579e8f" version="28.00.000" uri="../sources/69cb87e8-2532-455d-b7d3-18eced579e8f.xml">
+                <common:shortDescription xml:lang="en">GaBi Agriculture Model Documentation</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="57a2608f-18fc-454f-998a-1657376a4322" version="28.00.000" uri="../sources/57a2608f-18fc-454f-998a-1657376a4322.xml">
+                <common:shortDescription xml:lang="en">GaBi Land Use Change Model Documentation</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="3c6b1a84-fc51-463c-a66f-eaacfde2cb2f" version="28.00.000" uri="../sources/3c6b1a84-fc51-463c-a66f-eaacfde2cb2f.xml">
+                <common:shortDescription xml:lang="en">GaBi Energy Modelling Principles</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="1a453aa5-4e46-468f-b441-17fb02054ac3" version="28.00.000" uri="../sources/1a453aa5-4e46-468f-b441-17fb02054ac3.xml">
+                <common:shortDescription xml:lang="en">GaBi Refinery Modelling Principles</common:shortDescription>
+            </referenceToLCAMethodDetails>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <dataCutOffAndCompletenessPrinciples xml:lang="en">Cut-off rules for each unit process: Coverage of at least 95 % of mass and energy of the input and output flows, and 98 % of their environmental relevance (according to expert judgement).&#xD;
+For further details please see the document "GaBi Databases Modelling Principles"</dataCutOffAndCompletenessPrinciples>
+            <deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+            <dataSelectionAndCombinationPrinciples xml:lang="en">For details please see the document "GaBi Databases Modelling Principles"</dataSelectionAndCombinationPrinciples>
+            <deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+            <dataTreatmentAndExtrapolationsPrinciples xml:lang="en">For details please see the document "GaBi Databases Modelling Principles"</dataTreatmentAndExtrapolationsPrinciples>
+            <deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+            <referenceToDataSource type="source data set" refObjectId="d273be76-5fbd-11db-b0de-0800200c9a66" version="28.00.000" uri="../sources/d273be76-5fbd-11db-b0de-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Average Industry Data , 1999-2010</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource type="source data set" refObjectId="d273be75-5fbd-11db-b0de-0800200c9a66" version="28.00.000" uri="../sources/d273be75-5fbd-11db-b0de-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Patent-/ Technical Literature, 1999-2006</common:shortDescription>
+            </referenceToDataSource>
+            <percentageSupplyOrProductionCovered>95.0</percentageSupplyOrProductionCovered>
+            <uncertaintyAdjustments xml:lang="en">None</uncertaintyAdjustments>
+            <useAdviceForDataSet xml:lang="en">The data set is purely illustrative in support of teeILCD format extension and does not reflect any real product..</useAdviceForDataSet>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <completeness>
+            <completenessProductModel>No statement</completenessProductModel>
+            <completenessElementaryFlows type="Climate change" value="No statement"/>
+            <completenessElementaryFlows type="Ozone depletion" value="No statement"/>
+            <completenessElementaryFlows type="Summer smog" value="No statement"/>
+            <completenessElementaryFlows type="Eutrophication" value="No statement"/>
+            <completenessElementaryFlows type="Acidification" value="No statement"/>
+            <completenessElementaryFlows type="Human toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="No statement"/>
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Radioactivity" value="No statement"/>
+            <completenessElementaryFlows type="Land use" value="No statement"/>
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="No statement"/>
+            <completenessElementaryFlows type="Renewable material resource consumption" value="No statement"/>
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="No statement"/>
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="No statement"/>
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="No statement"/>
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+        </completeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <common:commissionerAndGoal>
+            <common:referenceToCommissioner type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToCommissioner>
+            <common:intendedApplications xml:lang="en">This data set is for illustratuve purposes only and not reflecting actual production/oepration of the product.</common:intendedApplications>
+        </common:commissionerAndGoal>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2017-07-23T12:55:54.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+            <common:referenceToDataSetUseApproval type="contact data set" refObjectId="be34bbb0-b054-11db-abbd-0800200c9a66" version="28.00.000" uri="../contacts/be34bbb0-b054-11db-abbd-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">No official approval by producer or operator</common:shortDescription>
+            </common:referenceToDataSetUseApproval>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2017-07-23T12:55:54.000</common:dateOfLastRevision>
+            <common:dataSetVersion>01.00.000</common:dataSetVersion>
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+            <common:referenceToOwnershipOfDataSet type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToOwnershipOfDataSet>
+            <common:copyright>true</common:copyright>
+            <common:licenseType>Other</common:licenseType>
+            <common:accessRestrictions xml:lang="en">none</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange dataSetInternalID="0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4f197bf2-7b3b-11dd-ad8b-0800200c9a66" version="28.00.000" uri="../flows/4f197bf2-7b3b-11dd-ad8b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Water (tap water)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <referenceToVariable>CW</referenceToVariable>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>0.441</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dad7268b-41ef-46e0-9641-48e431bbf937" version="28.00.000" uri="../flows/dad7268b-41ef-46e0-9641-48e431bbf937.xml">
+                <common:shortDescription xml:lang="en">Plastic granulate (unspecified)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <referenceToVariable>material</referenceToVariable>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.02</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="2">
+            <referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" version="28.00.000" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+                <common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <referenceToVariable>electricity</referenceToVariable>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>6.6422</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="3">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9f8f445c-e172-49f6-8881-bcf2a9824588" version="28.00.000" uri="../flows/9f8f445c-e172-49f6-8881-bcf2a9824588.xml">
+                <common:shortDescription xml:lang="en">Plastic (unspecified)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <referenceToVariable>waste</referenceToVariable>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>0.02</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac04-0050c2490048" version="03.00.000" uri="../flows/fe0acd60-3ddc-11dd-ac04-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">water vapour</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <referenceToVariable>CW</referenceToVariable>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>0.441</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="336b1168-c3ea-4b5c-9955-beb577f3c005" version="28.00.000" uri="../flows/336b1168-c3ea-4b5c-9955-beb577f3c005.xml">
+                <common:shortDescription xml:lang="en">Plastic part (unspecified)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <referenceToVariable>weight</referenceToVariable>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+    </exchanges>
+</processDataSet>

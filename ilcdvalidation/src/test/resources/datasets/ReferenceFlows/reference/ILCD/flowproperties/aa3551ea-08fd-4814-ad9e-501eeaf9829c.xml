@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flowproperty2html.xsl" type="text/xsl"?>
+<flowPropertyDataSet xmlns="http://lca.jrc.it/ILCD/FlowProperty" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://lca.jrc.it/ILCD/FlowProperty ../../schemas/ILCD_FlowPropertyDataSet.xsd" version="1.1">
+  <flowPropertiesInformation>
+    <dataSetInformation>
+      <common:UUID>aa3551ea-08fd-4814-ad9e-501eeaf9829c</common:UUID>
+      <common:name xml:lang="en">CML2001 - Nov. 2010, Human Toxicity Potential (HTP inf.)</common:name>
+      <classificationInformation>
+        <common:classification name="GaBiCategories" classes="../GaBiCategories.xml">
+          <common:class level="0" classId="34390d09-b09f-4f90-9b44-f5967461e18c">Environmental quantities</common:class>
+          <common:class level="1" classId="842df33c-bbef-47d6-97da-46fc9b4872d7">CML 2001 - Nov. 2010</common:class>
+        </common:classification>
+      </classificationInformation>
+      <common:generalComment xml:lang="en">Information on the CML 2001 Method: please refer to http://www.gabi-software.com/support/gabi/gabi-lcia-documentation/life-cycle-impact-assessment-lcia-methods/cml-2001/
+Characterization factors: version 3.9 (November 2010)</common:generalComment>
+    </dataSetInformation>
+    <quantitativeReference>
+      <referenceToReferenceUnitGroup refObjectId="d0e17e1b-bf41-4311-b18d-49fda771c322" version="03.00.000" type="unit group data set" uri="../unitgroups/d0e17e1b-bf41-4311-b18d-49fda771c322.xml">
+        <common:shortDescription xml:lang="en">Unit of Human toxicity</common:shortDescription>
+      </referenceToReferenceUnitGroup>
+    </quantitativeReference>
+  </flowPropertiesInformation>
+  <modellingAndValidation>
+    <dataSourcesTreatmentAndRepresentativeness/>
+    <complianceDeclarations>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="88d4f8d9-60f9-43d1-9ea3-329c10d7d727" version="01.00.000" type="source data set" uri="../sources/88d4f8d9-60f9-43d1-9ea3-329c10d7d727.xml">
+          <common:shortDescription xml:lang="en">ILCD compliance 1.1</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+      </compliance>
+    </complianceDeclarations>
+  </modellingAndValidation>
+  <administrativeInformation>
+    <dataEntryBy>
+      <common:timeStamp>2012-11-01T00:00:00+01:00</common:timeStamp>
+      <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.00.000" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+        <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+      </common:referenceToDataSetFormat>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dataSetVersion>03.00.000</common:dataSetVersion>
+    </publicationAndOwnership>
+  </administrativeInformation>
+</flowPropertyDataSet>

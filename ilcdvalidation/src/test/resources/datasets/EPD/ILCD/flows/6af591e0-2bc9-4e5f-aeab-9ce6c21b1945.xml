@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='../../stylesheets/flow2html.xsl'?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd">
+    <flowInformation>
+        <dataSetInformation>
+            <common:UUID>6af591e0-2bc9-4e5f-aeab-9ce6c21b1945</common:UUID>
+            <name>
+                <baseName xml:lang="de">Einsatz der als Rohstoff verwendeten erneuerbaren Primärenergieträger (stoffliche Nutzung)</baseName>
+            </name>
+        </dataSetInformation>
+    </flowInformation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2013-06-03T10:29:26.607+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>01.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+</flowDataSet>

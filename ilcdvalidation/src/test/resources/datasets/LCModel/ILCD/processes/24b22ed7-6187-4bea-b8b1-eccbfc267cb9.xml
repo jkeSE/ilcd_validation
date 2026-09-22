@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" version="1.1" locations="../ILCDLocations.xml" metaDataOnly="false" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>24b22ed7-6187-4bea-b8b1-eccbfc267cb9</common:UUID>
+            <name>
+                <baseName xml:lang="en">Rail transport cargo - Electric - sample</baseName>
+                <treatmentStandardsRoutes xml:lang="en">electricity driven, cargo</treatmentStandardsRoutes>
+                <mixAndLocationTypes xml:lang="en">consumption mix</mixAndLocationTypes>
+                <functionalUnitFlowProperties xml:lang="en">average train, gross tonne weight 1000t / 726t payload capacity</functionalUnitFlowProperties>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Transport services</common:class>
+                    <common:class level="1">Rail</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The data set is purely illustrative in support of the eILCD format extension and does not reflect any real product.</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>2</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time>
+            <common:referenceYear>2013</common:referenceYear>
+            <common:dataSetValidUntil>2016</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">annual average</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="GLO">
+                <descriptionOfRestrictions xml:lang="en">represents a global and unified applied technology</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Rail transport via electric cargo train. Variable parameters (with default setting) are: utilisation and distance. Train production, end-of-life treatment of the train and upstream processes for electricity production (e.g. exploration and production of fuels, refinery, transport, combustion emissions of power plants) are not included in the data set.</technologyDescriptionAndIncludedProcesses>
+            <technologicalApplicability xml:lang="en">Standard transport of bulk or volume goods with a payload of up to 726 tonnes for rail transport.</technologicalApplicability>
+            <referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="d0cf6d94-cd6a-4ffd-a1d8-742e9290cbdf" version="30.00.000" uri="../sources/d0cf6d94-cd6a-4ffd-a1d8-742e9290cbdf.xml">
+                <common:shortDescription xml:lang="en">Transport_Rail_electric.jpg</common:shortDescription>
+            </referenceToTechnologyFlowDiagrammOrPicture>
+        </technology>
+        <mathematicalRelations>
+            <variableParameter name="distance">
+                <meanValue>100.0</meanValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[km] distance start - end, default = 100 km</comment>
+            </variableParameter>
+            <variableParameter name="gr_tonne_weight">
+                <formula>2000</formula>
+                <meanValue>2000.0</meanValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[t] gross tonne weight of train, default = 2000 t</comment>
+            </variableParameter>
+            <variableParameter name="payload">
+                <formula>71 / (71 + 43) * gr_tonne_weight</formula>
+                <meanValue>726.190476190476</meanValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[t] average wagon: empty weight: 43 t, payload capacity: 71 t</comment>
+            </variableParameter>
+            <variableParameter name="rel_nt_gt">
+                <formula>utilisation / (utilisation + 43 / 71)</formula>
+                <meanValue>0.514767932489452</meanValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[net tonne/gross tonne]</comment>
+            </variableParameter>
+            <variableParameter name="spec_energy">
+                <formula>(0.001) ^ 2 * (1 / rel_nt_gt) * (gr_tonne_weight &lt;= 2200 ? 1200 * gr_tonne_weight ^ -0.62 * distance : 1200 * 2200 ^ -0.52 * distance)</formula>
+                <meanValue>0.00321787938404148</meanValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[kWh/kg] energy consumption</comment>
+            </variableParameter>
+            <variableParameter name="utilisation">
+                <meanValue>0.5</meanValue>
+                <minimumValue>0.0</minimumValue>
+                <maximumValue>1.0</maximumValue>
+                <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+                <comment xml:lang="en">[-] utilisation by mass, default average goods = 0.50 (bulk=0.76, volume goods=0.25)</comment>
+            </variableParameter>
+        </mathematicalRelations>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, single operation</typeOfDataSet>
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+            <deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+            <LCIMethodApproaches>Not applicable</LCIMethodApproaches>
+            <deviationsFromLCIMethodApproaches xml:lang="en">None</deviationsFromLCIMethodApproaches>
+            <modellingConstants xml:lang="en">All data used in the calculation of the LCI results refer to net calorific value.</modellingConstants>
+            <deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="f2b512cd-43b2-4260-9882-eebc06731274" version="28.00.000" uri="../sources/f2b512cd-43b2-4260-9882-eebc06731274.xml">
+                <common:shortDescription xml:lang="en">GaBi Modelling Principles</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="2f4e6329-f31d-44dc-8933-f4e6608590f5" version="28.00.000" uri="../sources/2f4e6329-f31d-44dc-8933-f4e6608590f5.xml">
+                <common:shortDescription xml:lang="en">GaBi Water Modelling Principles</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="69cb87e8-2532-455d-b7d3-18eced579e8f" version="28.00.000" uri="../sources/69cb87e8-2532-455d-b7d3-18eced579e8f.xml">
+                <common:shortDescription xml:lang="en">GaBi Agriculture Model Documentation</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="57a2608f-18fc-454f-998a-1657376a4322" version="28.00.000" uri="../sources/57a2608f-18fc-454f-998a-1657376a4322.xml">
+                <common:shortDescription xml:lang="en">GaBi Land Use Change Model Documentation</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="3c6b1a84-fc51-463c-a66f-eaacfde2cb2f" version="28.00.000" uri="../sources/3c6b1a84-fc51-463c-a66f-eaacfde2cb2f.xml">
+                <common:shortDescription xml:lang="en">GaBi Energy Modelling Principles</common:shortDescription>
+            </referenceToLCAMethodDetails>
+            <referenceToLCAMethodDetails type="source data set" refObjectId="1a453aa5-4e46-468f-b441-17fb02054ac3" version="28.00.000" uri="../sources/1a453aa5-4e46-468f-b441-17fb02054ac3.xml">
+                <common:shortDescription xml:lang="en">GaBi Refinery Modelling Principles</common:shortDescription>
+            </referenceToLCAMethodDetails>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <dataCutOffAndCompletenessPrinciples xml:lang="en">Cut-off rules for each unit process: Coverage of at least 95 % of mass and energy of the input and output flows, and 98 % of their environmental relevance (according to expert judgement).</dataCutOffAndCompletenessPrinciples>
+            <deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+            <dataSelectionAndCombinationPrinciples xml:lang="en">Data sources for the transport system are sufficiently consistent, emission factors as are based on average European conditions (key emissions are based on measured operating data). LCI modelling is fully consistent.</dataSelectionAndCombinationPrinciples>
+            <deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+            <dataTreatmentAndExtrapolationsPrinciples xml:lang="en">For details please see the document "GaBi Databases Modelling Principles".</dataTreatmentAndExtrapolationsPrinciples>
+            <deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+            <referenceToDataSource type="source data set" refObjectId="a66c4e99-b12f-11e0-a00b-0800200c9a66" version="28.00.000" uri="../sources/a66c4e99-b12f-11e0-a00b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Energieverbrauch u. Schadstoffemiss. des motorisierten Verkehrs in Deutschland 1960-2030(TREMOD, v5)</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource type="source data set" refObjectId="a66c4e98-b12f-11e0-a00b-0800200c9a66" version="28.00.000" uri="../sources/a66c4e98-b12f-11e0-a00b-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">EcoTransIT World, Ecolog.Transport Information Tool for Worldwide Transports: Methodology and Data</common:shortDescription>
+            </referenceToDataSource>
+            <percentageSupplyOrProductionCovered>95.0</percentageSupplyOrProductionCovered>
+            <annualSupplyOrProductionVolume xml:lang="en">(__all empty__)</annualSupplyOrProductionVolume>
+            <dataCollectionPeriod xml:lang="en">2010-2011</dataCollectionPeriod>
+            <uncertaintyAdjustments xml:lang="en">None</uncertaintyAdjustments>
+            <useAdviceForDataSet xml:lang="en">The data set is purely illustrative in support of teeILCD format extension and does not reflect any real product.</useAdviceForDataSet>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <completeness>
+            <completenessProductModel>No statement</completenessProductModel>
+            <completenessElementaryFlows type="Climate change" value="No statement"/>
+            <completenessElementaryFlows type="Ozone depletion" value="No statement"/>
+            <completenessElementaryFlows type="Summer smog" value="No statement"/>
+            <completenessElementaryFlows type="Eutrophication" value="No statement"/>
+            <completenessElementaryFlows type="Acidification" value="No statement"/>
+            <completenessElementaryFlows type="Human toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="No statement"/>
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="No statement"/>
+            <completenessElementaryFlows type="Radioactivity" value="No statement"/>
+            <completenessElementaryFlows type="Land use" value="No statement"/>
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="No statement"/>
+            <completenessElementaryFlows type="Renewable material resource consumption" value="No statement"/>
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="No statement"/>
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="No statement"/>
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="No statement"/>
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+        </completeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <common:commissionerAndGoal>
+            <common:referenceToCommissioner type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToCommissioner>
+            <common:intendedApplications xml:lang="en">This data set is for illustratuve purposes only and not reflecting actual production/oepration of the product.</common:intendedApplications>
+        </common:commissionerAndGoal>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2017-07-23T12:55:54.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+            <common:referenceToDataSetUseApproval type="contact data set" refObjectId="be34bbb0-b054-11db-abbd-0800200c9a66" version="28.00.000" uri="../contacts/be34bbb0-b054-11db-abbd-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">No official approval by producer or operator</common:shortDescription>
+            </common:referenceToDataSetUseApproval>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2017-07-23T12:55:54.000</common:dateOfLastRevision>
+            <common:dataSetVersion>01.00.000</common:dataSetVersion>
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+            <common:referenceToOwnershipOfDataSet type="contact data set" refObjectId="ba47c560-d6a9-99bc-a94d-1230208c9b71" version="01.00.000" uri="../contacts/ba47c560-d6a9-99bc-a94d-1230208c9b71.xml">
+                <common:shortDescription xml:lang="en">maki</common:shortDescription>
+            </common:referenceToOwnershipOfDataSet>
+            <common:copyright>true</common:copyright>
+            <common:licenseType>Other</common:licenseType>
+            <common:accessRestrictions xml:lang="en">none</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange dataSetInternalID="0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1d0243cc-b9f4-4c91-b3e6-cb69067b9e82" version="00.00.000" uri="../flows/1d0243cc-b9f4-4c91-b3e6-cb69067b9e82.xml">
+                <common:shortDescription xml:lang="en">Cargo at departure</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="598e8a3b-c1e5-49d2-8305-176bfd0af3c2" version="28.00.000" uri="../flows/598e8a3b-c1e5-49d2-8305-176bfd0af3c2.xml">
+                <common:shortDescription xml:lang="en">Electricity high voltage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <referenceToVariable>spec_energy</referenceToVariable>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>0.022384365782549328</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+        <exchange dataSetInternalID="2">
+            <referenceToFlowDataSet type="flow data set" refObjectId="885d2a57-b6ca-4188-b6ff-618435ada8e0" version="00.00.000" uri="../flows/885d2a57-b6ca-4188-b6ff-618435ada8e0.xml">
+                <common:shortDescription xml:lang="en">Cargo at destination</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+            <dataSourceType>Mixed primary / secondary</dataSourceType>
+            <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+        </exchange>
+    </exchanges>
+</processDataSet>

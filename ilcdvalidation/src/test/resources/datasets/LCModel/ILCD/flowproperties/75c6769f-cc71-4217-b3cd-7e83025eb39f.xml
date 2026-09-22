@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet href="../../stylesheets/flowproperty2html.xsl" type="text/xsl"?>
+<flowPropertyDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/FlowProperty" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/FlowProperty ../../schemas/ILCD_FlowPropertyDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flowPropertiesInformation>
+        <dataSetInformation>
+            <common:UUID>75c6769f-cc71-4217-b3cd-7e83025eb39f</common:UUID>
+            <common:name xml:lang="en">Polymer materials (unspecified)</common:name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Technical flow properties</common:class>
+                </common:classification>
+            </classificationInformation>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceToReferenceUnitGroup type="unit group data set" refObjectId="ad38d542-3fe9-439d-9b95-2f5f7752acaf" version="00.00.000" uri="../unitgroups/ad38d542-3fe9-439d-9b95-2f5f7752acaf.xml">
+                <common:shortDescription xml:lang="en">Unit of mass</common:shortDescription>
+            </referenceToReferenceUnitGroup>
+        </quantitativeReference>
+    </flowPropertiesInformation>
+    <modellingAndValidation>
+        <dataSourcesTreatmentAndRepresentativeness/>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+                    <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2011-10-31T23:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>28.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+</flowPropertyDataSet>

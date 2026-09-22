@@ -1,0 +1,10 @@
+/target/
+/bin/
+.idea/
+*.iml
+.classpath
+**/.DS_Store
+**/.settings/
+**/*~
+.java-version
+src/test/resources/**/*.xlsx

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd" locations="../ILCDLocations.xml" version="1.1">
+  <processInformation>
+    <dataSetInformation>
+      <common:UUID>0a1b40db-5645-4db8-a887-eb09300b7b74</common:UUID>
+      <name>
+        <baseName xml:lang="en">Electricity Mix</baseName>
+        <treatmentStandardsRoutes xml:lang="en">AC</treatmentStandardsRoutes>
+        <mixAndLocationTypes xml:lang="en">consumption mix, at consumer</mixAndLocationTypes>
+        <functionalUnitFlowProperties xml:lang="en">1kV - 60kV</functionalUnitFlowProperties>
+      </name>
+      <common:synonyms xml:lang="en">power grid mix</common:synonyms>
+      <classificationInformation>
+        <common:classification>
+          <common:class level="0">Energy carriers and technologies</common:class>
+          <common:class level="1">Electricity</common:class>
+        </common:classification>
+      </classificationInformation>
+      <common:generalComment xml:lang="en">Good overall data quality. Energy carrier mix information based on official statistical information including import/export. Detailed
+        power plant models were used, which combine measured emissions plus calculated values for not measured emissions of e.g. organics or heavy metals. Energy carrier extraction
+        and processing data is of sufficient to good (e.g. refinery) data quality. Inventory is partly based on primary industry data, partly on secondary literature
+        data.</common:generalComment>
+    </dataSetInformation>
+    <quantitativeReference type="Reference flow(s)">
+      <referenceToReferenceFlow>63</referenceToReferenceFlow>
+    </quantitativeReference>
+    <time>
+      <common:referenceYear>2002</common:referenceYear>
+      <common:dataSetValidUntil>2010</common:dataSetValidUntil>
+      <common:timeRepresentativenessDescription xml:lang="en">Annual average</common:timeRepresentativenessDescription>
+    </time>
+    <geography>
+      <locationOfOperationSupplyOrProduction location="EU-27">
+        <descriptionOfRestrictions xml:lang="en">The data set represents the country / region specific situation, focusing on the main technologies, the region specific
+          characteristics and / or import statistics.</descriptionOfRestrictions>
+      </locationOfOperationSupplyOrProduction>
+    </geography>
+    <technology>
+      <technologyDescriptionAndIncludedProcesses xml:lang="en">The EU-27 specific power grid mix is shown in the pie chart "Power Grid Mix - EU-27". Each country provides a certain
+        amount of electricity to the mix. In addition, the calculated breakdown of the energy carriers used for generating the electricity is shown below. The electricity is either
+        produced in energy carrier specific power plants and / or energy carrier specific heat and power plants (CHP). For more details see the corresponding country specific data
+        sets. Each country specific fuel supply (share of resources used, by import and / or domestic supply) including the country specific energy carrier properties (e.g. element
+        and energy contents) are accounted for. Furthermore country specific technology standards of power plants regarding efficiency, firing technology, flue-gas
+        desulphurisation, NOx removal and dedusting are considered. Each country specific electricity consumption mix is modelled as shown in the flow diagram "Modelling of Power
+        Consumption Mix". It includes imported/exported electricity, distribution losses (in %) and the own use by energy producers. The data set considers the whole supply chain
+        of the fuels from exploration over extraction and preparation to transport of fuels to the power plants.    The background system is addressed as follows:  Transports: All
+        relevant and known transport processes used are included. Overseas transports including rail and truck transport to and from major ports for imported bulk resources are
+        included. Furthermore all relevant and known pipeline and / or tanker transport of gases and oil imports are included.  Energy carriers: Coal, crude oil, natural gas and
+        uranium are modelled according to the specific import situation.  Refinery products: Diesel, gasoline, technical gases, fuel oils, basic oils and residues such as bitumen
+        are modelled via a country-specific, refinery parameterized model. The refinery model represents the current national standard in refinery techniques (e.g. emission level,
+        internal energy consumption,...) as well as the individual country-specific product output spectrum, which can be quite different from country to country. Hence the
+        refinery products used show the individual country-specific use of resources. The supply of crude oil is modelled, again, according to the country-specific crude oil
+        situation with the respective properties of the resources.</technologyDescriptionAndIncludedProcesses>
+      <technologicalApplicability xml:lang="en">Medium voltage (1kV - 60kV) electricity for final consumers.</technologicalApplicability>
+      <referenceToTechnologyPictogramme refObjectId="5d9e826d-70cd-4539-98f1-e0f05f58747e" type="source data set" uri="../sources/5d9e826d-70cd-4539-98f1-e0f05f58747e.xml">
+        <common:shortDescription xml:lang="en">PE_LBP-GaBi_Energy_Electricity_Country-Mix_5d9e826d-70cd-4539-98f1-e0f05f58747e.jpg</common:shortDescription>
+      </referenceToTechnologyPictogramme>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="3cb18489-4359-11dd-ae16-0800200c9a66" type="source data set"
+        uri="../sources/3cb18489-4359-11dd-ae16-0800200c9a66.xml">
+        <common:shortDescription xml:lang="en">PE_LBP-GaBi_Energy_Electricity_Mix_EU-27_2_3cb18489-4359-11dd-ae16-0800200c9a66.jpg</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="3cb18488-4359-11dd-ae16-0800200c9a66" type="source data set"
+        uri="../sources/3cb18488-4359-11dd-ae16-0800200c9a66.xml">
+        <common:shortDescription xml:lang="en">PE_LBP-GaBi_Energy_Electricity_Mix_EU-27_1_3cb18488-4359-11dd-ae16-0800200c9a66.jpg</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="1318cdbd-5fba-11db-b0de-0800200c9a66" type="source data set"
+        uri="../sources/1318cdbd-5fba-11db-b0de-0800200c9a66.xml">
+        <common:shortDescription xml:lang="en">PE_LBP-GaBi_Energy_Electricity_Mix_Modelling_1318cdbd-5fba-11db-b0de-0800200c9a66.jpg</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+    </technology>
+  </processInformation>
+  <modellingAndValidation>
+    <LCIMethodAndAllocation>
+      <typeOfDataSet>LCI result</typeOfDataSet>
+      <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+      <deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+      <LCIMethodApproaches>Allocation - exergetic content</LCIMethodApproaches>
+      <LCIMethodApproaches>Allocation - net calorific value</LCIMethodApproaches>
+      <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+      <LCIMethodApproaches>Allocation - mass</LCIMethodApproaches>
+      <deviationsFromLCIMethodApproaches>For the combined heat and power production, allocation by exergetic content is applied. For the electricity generation and by-products,
+        e.g. gypsum, allocation by market value is applied due to no common physical properties. Within the refinery allocation by net calorific value and mass is used. For the
+        combined crude oil, natural gas and natural gas liquids production allocation by net calorific value is applied.</deviationsFromLCIMethodApproaches>
+      <modellingConstants xml:lang="en">All data used in the calculation of the LCI results refer to net calorific value. For the transport of energy carriers average transport
+        processes with specific parameter settings e.g. transport distances and route (ship, pipeline, rail, road) are used.</modellingConstants>
+      <deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+    </LCIMethodAndAllocation>
+    <dataSourcesTreatmentAndRepresentativeness>
+      <dataCutOffAndCompletenessPrinciples xml:lang="en">Cut-off rules for each unit process: Coverage of at least 95 % of mass and energy of the input and output flows, and 98 %
+        of their environmental relevance (according to expert judgement).</dataCutOffAndCompletenessPrinciples>
+      <deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">The coverage for the exploration data (crude oil, natural gas, natural gas liquids) is only 90% of mass and
+        energy and 95% of the environmental relevance (expert judgement).</deviationsFromCutOffAndCompletenessPrinciples>
+      <dataSelectionAndCombinationPrinciples xml:lang="en">The data sources for the complete product system are sufficiently consistent: The grid mix data is based on national
+        statistics. The key emissions e.g. sulphur dioxide, nitrogen oxide, etc., of the power plants are based on measured operating data taken from national statistics. All other
+        emissions from the power plants are based on literature data and / or calculated via energy carrier composition in combination with (literature-based) combustion models.
+        Detailed power plant models were used, which combine measured emissions plus calculated values for not measured emissions of e.g. organics or heavy metals. Infrastructure
+        data are from literature. The data on the energy carrier supply chain is based on statistics with country / region-specific transport distances and energy carrier
+        composition, as well as industry and literature data on the inventory of exploration and extraction. Refinery data are also based on statistical data and measurements of
+        major refineries as well as literature data. LCI modelling is fully consistent.</dataSelectionAndCombinationPrinciples>
+      <deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+      <dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Energy carrier specific power plants are modelled according to national combustion technology mix. Data measured at
+        representative power plants and published have been used to represent the country / region mix of power plant technologies.</dataTreatmentAndExtrapolationsPrinciples>
+      <deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+      <percentageSupplyOrProductionCovered>95.0</percentageSupplyOrProductionCovered>
+      <useAdviceForDataSet xml:lang="en">Use by medium voltage electricity customers without own electricity generators or transformers (e.g. at industry and SME), which use
+        electricity directly from the grid. The data set can be used for all LCI/LCA studies where electricity is needed.</useAdviceForDataSet>
+    </dataSourcesTreatmentAndRepresentativeness>
+    <completeness>
+      <completenessProductModel>All relevant flows quantified</completenessProductModel>
+    </completeness>
+    <validation>
+      <review type="Dependent internal review">
+        <common:scope name="Raw data">
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Expert judgement"/>
+        </common:scope>
+        <common:scope name="Unit process(es), black box">
+          <common:method name="Energy balance"/>
+          <common:method name="Element balance"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCI results or Partly terminated system">
+          <common:method name="Energy balance"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCIA results">
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+        </common:scope>
+        <common:scope name="Documentation">
+          <common:method name="Expert judgement"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="Life cycle inventory methods">
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation,
+          representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.; Documentation: The review of the documentation was performed by Ecobilan
+          and is in compliance with ISO 14040 and 14044. The data set documentation is correct in view of the appropriateness of the information provided. It includes all relevant
+          information in view of data quality and scope of application of the respective LCI result.</common:reviewDetails>
+      </review>
+    </validation>
+  </modellingAndValidation>
+  <administrativeInformation>
+    <dataEntryBy>
+      <common:timeStamp>2012-01-20T10:26:17+01:00</common:timeStamp>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dataSetVersion>03.00.000</common:dataSetVersion>
+      <common:copyright>true</common:copyright>
+      <common:accessRestrictions xml:lang="en">The data set can be used free of charge by anybody to perform LCA studies, to distribute it to third parties, to convert it to other
+        formats, to develop own data sets etc. as long as the copyright and license conditions for the ELCD data sets and the ILCD format are met that can be accessed via
+        http://lca.jrc.ec.europa.eu. Please note e.g. that reference must be given to the 'Owner of data set' and to the 'ELCD database' plus version number, when using the data
+        set or parts thereof. Please note also, that any modifications/omissions of the data set results in invalidity of any existing 'Official approval of data set by
+        producer/operator', that the impression must be avoided that this would still be a complete ELCD data set, and that the content of further fields has to be adjusted. For
+        details see the aforementioned copyright and license conditions.</common:accessRestrictions>
+    </publicationAndOwnership>
+  </administrativeInformation>
+</processDataSet>
